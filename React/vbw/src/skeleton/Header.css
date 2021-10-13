@@ -1,0 +1,22 @@
+.Header-menu{
+    justify-content: space-around;
+}
+
+.Header-menu-element{
+    margin: auto
+}
+
+#Header-menu-element-logo{
+    margin: 0;   
+}
+
+.Header-dp{
+    display: flex;
+    flex-direction: row;
+    color: black
+}
+
+.Header-dp-logo{
+    width: 45px;
+    height: 45px;
+}
