@@ -13,17 +13,17 @@ export function Header(){
                         <h3>Decentralized People</h3>
                     </div>
                 </Menu.Item>
-                <Menu.Item className = "Header-menu-element">
+                <Menu.Item className = "Header-menu-element" id="Header-menu-element-settings">
                     <SettingOutlined />
                 </Menu.Item>
-                <Menu.Item className = "Header-menu-element">
-                    Item 1
+                <Menu.Item className = "Header-menu-element" id="Header-menu-element-item1">
+                    Energy
                 </Menu.Item>
-                <Menu.Item className = "Header-menu-element">
-                    Item 2
+                <Menu.Item className = "Header-menu-element" id="Header-menu-element-item2">
+                    Carbon Emissions
                 </Menu.Item>
-                <Menu.Item className = "Header-menu-element">
-                    Item 3
+                <Menu.Item className = "Header-menu-element" id="Header-menu-element-item3">
+                    E-waste
                 </Menu.Item>
             </Menu>
         </header>
