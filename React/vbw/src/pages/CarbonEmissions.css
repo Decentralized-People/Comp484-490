@@ -1,0 +1,16 @@
+.CarbonEmissions-tabs{
+    position: relative;
+    visibility: visible;
+    height: 100vh;
+}
+
+.CarbonEmissions-text{
+    margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .CarbonEmissions-tabs{
+        visibility: hidden;
+        position: absolute;
+    }
+}

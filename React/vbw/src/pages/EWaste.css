@@ -1,0 +1,16 @@
+.Ewaste-tabs{
+    position: relative;
+    visibility: visible;
+    height: 100vh;
+}
+
+.Ewaste-text{
+    margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .Ewaste-tabs{
+        visibility: hidden;
+        position: absolute;
+    }
+}

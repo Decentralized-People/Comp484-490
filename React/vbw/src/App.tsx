@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.less';
-import { Menu, Row, Col } from 'antd';
-import { SettingOutlined }  from '@ant-design/icons'
+import { Menu, Row, Col, Tabs } from 'antd';
 import dpLogo from './assets/dp/dp_logo_nocolor.svg'
 import { CarbonEmissions } from './pages/CarbonEmissions';
 import { Energy } from './pages/Energy';
 import { EWaste } from './pages/EWaste';
+import { Settings } from './pages/Settings';
 import {
   BrowserRouter,
   Route,
   Link,
   Redirect,
 } from "react-router-dom";
+
 
 function App(): JSX.Element {
   return (
@@ -36,7 +37,7 @@ function App(): JSX.Element {
                   <Link to="/e-waste">E-waste</Link>
               </Menu.Item>
               <Menu.Item className = "Header-menu-element" id="Header-menu-element-settings">
-                  <SettingOutlined />
+                  <Settings/>
               </Menu.Item>
           </Menu>
         </header>

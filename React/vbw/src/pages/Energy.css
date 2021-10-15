@@ -1,0 +1,16 @@
+.Energy-tabs{
+    position: relative;
+    visibility: visible;
+    height: 100vh;
+}
+
+.Energy-text{
+    margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .Energy-tabs{
+        visibility: hidden;
+        position: absolute;
+    }
+}
