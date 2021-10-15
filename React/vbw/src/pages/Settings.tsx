@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Drawer, Button } from 'antd';
+import { Drawer } from 'antd';
 import { SettingOutlined }  from '@ant-design/icons'
 
 
@@ -18,7 +18,7 @@ export function Settings(): JSX.Element{
     return (
         <>
             <div className="Settings-div">
-            <SettingOutlined onClick={showDrawer} />
+                <SettingOutlined onClick={showDrawer} />
             </div>
             <Drawer title="Settings" placement="right" onClose={onClose} visible={visible}>
                 <p>Choose Your Language...</p>

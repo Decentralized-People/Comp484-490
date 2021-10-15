@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.less';
-import { Menu, Row, Col, Tabs } from 'antd';
+import { Menu } from 'antd';
 import dpLogo from './assets/dp/dp_logo_nocolor.svg'
 import { CarbonEmissions } from './pages/CarbonEmissions';
 import { Energy } from './pages/Energy';
@@ -23,7 +23,7 @@ function App(): JSX.Element {
           <Menu mode = "horizontal" className = "Header-menu" defaultSelectedKeys={["Energy"]}>
               <Menu.Item className = "Header-menu-element" id="Header-menu-element-logo" disabled={true}>
                   <div className="Header-dp">
-                      <img src = {dpLogo} className = "Header-dp-logo"/>
+                      <img src = {dpLogo} className = "Header-dp-logo" alt="Decentralized People logo"/>
                       <h3 className="Header-dp-text">Decentralized People</h3>
                   </div>
               </Menu.Item>
