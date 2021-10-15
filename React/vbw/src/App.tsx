@@ -23,11 +23,8 @@ function App(): JSX.Element {
               <Menu.Item className = "Header-menu-element" id="Header-menu-element-logo" disabled={true}>
                   <div className="Header-dp">
                       <img src = {dpLogo} className = "Header-dp-logo"/>
-                      <h3>Decentralized People</h3>
+                      <h3 className="Header-dp-text">Decentralized People</h3>
                   </div>
-              </Menu.Item>
-              <Menu.Item className = "Header-menu-element" id="Header-menu-element-settings">
-                  <SettingOutlined />
               </Menu.Item>
               <Menu.Item className = "Header-menu-element" id="Header-menu-element-item1" key="Energy">
                   <Link to="/energy">Energy</Link>
@@ -37,6 +34,9 @@ function App(): JSX.Element {
               </Menu.Item>
               <Menu.Item className = "Header-menu-element" id="Header-menu-element-item3" key="EWaste">
                   <Link to="/e-waste">E-waste</Link>
+              </Menu.Item>
+              <Menu.Item className = "Header-menu-element" id="Header-menu-element-settings">
+                  <SettingOutlined />
               </Menu.Item>
           </Menu>
         </header>

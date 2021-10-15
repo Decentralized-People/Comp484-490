@@ -1,7 +1,7 @@
 @import '~antd/dist/antd.less';
 
 .Header-menu{
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .Header-menu-element{
@@ -12,19 +12,21 @@
     margin: 0;   
 }
 
+
 #Header-menu-element-settings{
-    margin-left: 0;   
+    margin-right: 0;   
 }
 
 #Header-menu-element-item1{
     margin-right: 0;   
 }
 #Header-menu-element-item2{
-    margin-left: 10%;   
-    margin-right: 10%;   
+    margin-left: 3%;   
+    margin-right: 3%;   
 }
 #Header-menu-element-item3{
-    margin-left: 0;   
+    margin-left: 0;
+    margin-right: 0;   
 }
 
 .Header-dp{
@@ -36,4 +38,26 @@
 .Header-dp-logo{
     width: 45px;
     height: 45px;
+}
+
+.Header-dp-text{
+    visibility: visible;
+    position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    .Header-dp-text{
+        visibility: hidden;
+        position: absolute;
+    }
+    #Header-menu-element-item1{
+        margin-right: auto;   
+    }
+    #Header-menu-element-item2{
+        margin-left: auto;   
+        margin-right: auto;   
+    }
+    #Header-menu-element-item3{
+        margin-left: auto;   
+    }
 }
