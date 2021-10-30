@@ -1,14 +1,21 @@
 
-import { ApplicationAction } from "./actions";
+import { ApplicationAction } from "./actions"
+import { Language } from "../assets/lang/_lang_interfaces";
+
+import en_US from "../assets/lang/en_US.json";
+import ru_RU from "../assets/lang/ru_RU.json";
+
+const enUS = en_US;
+const ruRU = ru_RU;
 
 export interface ApplicatonState {
   settings_open: boolean;
-  language: string;
+  language: Language;
 }
 
 const initialState = {
   settings_open: false,
-  language: "en-US"
+  language: ru_RU,
 }
 
 export const reducers = (state: ApplicatonState = initialState, action: ApplicationAction) => {
@@ -22,7 +29,7 @@ export const reducers = (state: ApplicatonState = initialState, action: Applicat
     case "SWITCH_LANGUAGE":
       return {
         ...state,
-        language: action.payload,
+        language: eval(action.payload),
       }
 
     default:
