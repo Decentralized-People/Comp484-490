@@ -16,6 +16,8 @@ import { useDispatch } from "react-redux";
 import { toggleSettings } from './store/actions';
 import { useTypedSelector } from './store';
 
+import en_US from "./assets/lang/en_US.json";
+import ru_RU from "./assets/lang/en_US.json";
 
 function App(): JSX.Element {
 
