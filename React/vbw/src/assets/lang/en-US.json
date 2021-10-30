@@ -1,0 +1,30 @@
+{
+    "title": "ProjectVBW",
+    "header": {
+        "energy": "Energy",
+        "carbon_emissions": "Carbon Emissions",
+        "e-waste" : "E-waste"  
+    },
+
+    "side-bar" : {
+        "tab1" : "Tab 1",
+        "tab2" : "Tab 2",
+        "tab3" : "Tab 3"
+    },
+
+    "settings" : {
+        "choose": "Choose your language"
+    },
+
+    "sections" : {
+        "energy": {
+            "title": "Hello World, I am the energy"
+        },
+        "carbon_emissions": {
+            "title": "Hello World, I am the carbon emissions"
+        },
+        "e-waste": {
+            "title": "Hello World, I am the e-waste"
+        }
+    }
+}

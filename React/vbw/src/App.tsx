@@ -12,9 +12,22 @@ import {
   Link,
   Redirect,
 } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { toggleSettings } from './store/actions';
+import { useTypedSelector } from './store';
 
 
 function App(): JSX.Element {
+
+  const dispatch = useDispatch();
+
+  function settingsToggle() {
+    dispatch(toggleSettings());
+  }
+
+  const visible = useTypedSelector((state) => state.reducers.settings_open);
+
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -36,13 +49,14 @@ function App(): JSX.Element {
               <Menu.Item className = "Header-menu-element" id="Header-menu-element-item3" key="EWaste">
                   <Link to="/e-waste">E-waste</Link>
               </Menu.Item>
-              <Menu.Item className = "Header-menu-element" id="Header-menu-element-settings">
+              <Menu.Item className = "Header-menu-element" id="Header-menu-element-settings" onClick={settingsToggle}>
                   <Settings/>
               </Menu.Item>
           </Menu>
         </header>
         {/* ////////////////////////////////////////////////////////////////////// */}
         <div className="Body">
+
           <Route path="/" />
           <Redirect to="/energy"></Redirect>
           <Route path="/energy" component={Energy} />

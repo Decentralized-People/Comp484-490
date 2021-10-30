@@ -1,26 +1,16 @@
-import React, { useState } from 'react';
 import { Drawer } from 'antd';
 import { SettingOutlined }  from '@ant-design/icons'
-
-
+import { useTypedSelector } from '../store';
 export function Settings(): JSX.Element{
 
-    const [visible, setVisible] = useState(false);
-
-    const showDrawer = () => {
-      setVisible(true);
-    };
-
-    const onClose = () => {
-      setVisible(false);
-    };
+    const visible = useTypedSelector((state) => state.reducers.settings_open);
 
     return (
         <>
             <div className="Settings-div">
-                <SettingOutlined onClick={showDrawer} />
+                <SettingOutlined/>
             </div>
-            <Drawer title="Settings" placement="right" onClose={onClose} visible={visible}>
+            <Drawer title="Settings" placement="right" visible={visible}>
                 <p>Choose Your Language...</p>
             </Drawer>
         </>
