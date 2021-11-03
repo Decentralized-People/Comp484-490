@@ -4,9 +4,12 @@ import { Language } from "../assets/lang/_lang_interfaces";
 
 import en_US from "../assets/lang/en_US.json";
 import ru_RU from "../assets/lang/ru_RU.json";
+import fi_FIN from "../assets/lang/fi_FIN.json";
+
 
 const enUS = en_US;
 const ruRU = ru_RU;
+const fiFIN = fi_FIN;
 
 export interface ApplicatonState {
   settings_open: boolean;
