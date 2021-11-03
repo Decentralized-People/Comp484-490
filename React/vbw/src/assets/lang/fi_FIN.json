@@ -1,0 +1,32 @@
+{
+    "title": "ProjektiVBW",
+    "authors": "",
+    "header": {
+        "energy": "Energia",
+        "carbon_emissions": "Hiilidioksidipäästöt",
+        "e_waste" : "Elektroniikkajäte"  
+    },
+
+    "side_bar" : {
+        "tab1" : "Välilehti 1",
+        "tab2" : "Välilehti 2",
+        "tab3" : "Välilehti 3"
+    },
+
+    "settings" : {
+        "title" : "Asetukset",
+        "choose": "Valitse kieli"
+    },
+
+    "sections" : {
+        "energy": {
+            "title": "Moi maailma, olen energia"
+        },
+        "carbon_emissions": {
+            "title": "Moi maailma, olen hiilidioksidipäästöt"
+        },
+        "e_waste": {
+            "title": "Moi maailma, olen elektroniikkajäte"
+        }
+    }
+}
