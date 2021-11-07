@@ -1,0 +1,32 @@
+{
+    "title": "ProjectVBW",
+    "authors": "Decentralized People",
+    "header": {
+        "energy": "Energie",
+        "carbon_emissions": "Kohleemissionen",
+        "e_waste" : "E-waste"  
+    },
+
+    "side_bar" : {
+        "tab1" : "Teil 1",
+        "tab2" : "Teil 2",
+        "tab3" : "Teil 3"
+    },
+
+    "settings" : {
+        "title" : "Settings",
+        "choose": "Wählen Sie ihre Sprache"
+    },
+
+    "sections" : {
+        "energy": {
+            "title": "Hallo Alle, ich bin Energie"
+        },
+        "carbon_emissions": {
+            "title": "Hallo Alle, ich bin Kohleemissionen"
+        },
+        "e_waste": {
+            "title": "Hello Alle, ich bin E_Waste"
+        }
+    }
+}
