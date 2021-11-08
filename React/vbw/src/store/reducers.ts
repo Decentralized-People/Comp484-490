@@ -7,12 +7,14 @@ import ru_RU from "../assets/lang/ru_RU.json";
 import fi_FIN from "../assets/lang/fi_FIN.json";
 import de_DE from "../assets/lang/de_DE.json";
 import geo_Geo from "../assets/lang/geo_Geo.json";
+import sp_SP from "../assets/lang/sp_SP.json";
 
 const enUS = en_US;
 const ruRU = ru_RU;
 const fiFIN = fi_FIN;
 const deDE = de_DE;
 const geoGeo = geo_Geo;
+const spSP = sp_SP;
 
 export interface ApplicatonState {
   settings_open: boolean;

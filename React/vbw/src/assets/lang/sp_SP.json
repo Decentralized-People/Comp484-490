@@ -1,0 +1,32 @@
+{
+    "title": "ProyectoVBW",
+    "authors": "Gente Descentralizada",
+    "header": {
+        "energy": "Energía",
+        "carbon_emissions": "Emisiones de Carbon",
+        "e_waste" : "Residuos Electrónicos"  
+    },
+
+    "side_bar" : {
+        "tab1" : "Etiqueta 1",
+        "tab2" : "Etiqueta 2",
+        "tab3" : "Etiqueta 3"
+    },
+
+    "settings" : {
+        "title" : "Los Ajustes",
+        "choose": "Elige su Idioma"
+    },
+
+    "sections" : {
+        "energy": {
+            "title": "Hola mundo, soy la energia"
+        },
+        "carbon_emissions": {
+            "title": "Hola mundo, soy la emision de carbon"
+        },
+        "e_waste": {
+            "title": "Hola mundo, soy la residuo electrónico"
+        }
+    }
+}

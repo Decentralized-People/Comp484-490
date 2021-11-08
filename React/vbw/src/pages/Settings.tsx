@@ -28,6 +28,9 @@ export function Settings(lang: Language): JSX.Element{
                 <button onClick={() => changeLang("fiFIN") }>Switch language to Fin</button>
                 <button onClick={() => changeLang("deDE") }>Switch language to Deu</button>
                 <button onClick={() => changeLang("freFRE") }>Switch language to Fre</button>
+                <button onClick={() => changeLang("spSP") }>Switch language to Spa</button>
+
+
             </Drawer>
         </>
     )
