@@ -10,7 +10,6 @@ export default class CoinsGetter extends React.Component {
     url;
     loger;
     parsedCoinList;
-    dispatch;
 
     constructor(){
         super();
@@ -26,15 +25,8 @@ export default class CoinsGetter extends React.Component {
     
         //URL to fetch from
         this.url = "https://api.minerstat.com/v2/coins";
-
-        this.dispatch = useDispatch();
-
     }
-    
 
-    setCoins(coins){
-        dispatch(this.setCoins(coins));
-    }
 
     componentDidMount(){
         fetch(this.url+"?list="+this.coinlist.coins)
@@ -95,6 +87,7 @@ export default class CoinsGetter extends React.Component {
             parsedCoinList[i] = buildObj;
         }
 
+        
         //For each key given in the coin
         for(const i in Object.keys(data))
         {
@@ -107,6 +100,7 @@ export default class CoinsGetter extends React.Component {
             }
         
         }
+
         return parsedCoinList;
     }
 }

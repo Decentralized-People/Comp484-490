@@ -2,11 +2,15 @@ import React from "react";
 import { Typography, Tabs } from 'antd';
 import './Energy.css'
 import { Language } from "../store/interfaces";
-import coinGrabber from "./coinGrabber";
+import coinGrabber from "./coinGrabber.jsx";
+import { CoinGraph } from "./CoinGraph";
+
 
 export function Cryptocurrency(lang: Language){
 
     const grabber = new coinGrabber();
+    grabber.componentDidMount();
+
 
     return(
         <>
@@ -19,7 +23,8 @@ export function Cryptocurrency(lang: Language){
                 </Tabs.TabPane>
             </Tabs>
             <Typography.Title level={3} className="Energy-text">
-                {grabber.parsedCoinList}
+                {grabber.url}
+                <CoinGraph {...lang} ></CoinGraph>
             </Typography.Title>
         </>
     )
