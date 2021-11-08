@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Tabs } from 'antd';
 import './Energy.css'
-import { Language } from "../assets/lang/_lang_interfaces";
+import { Language } from "../store/interfaces";
 
 export function Energy(lang: Language){
     return(

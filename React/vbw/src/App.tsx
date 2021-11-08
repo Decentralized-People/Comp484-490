@@ -5,6 +5,7 @@ import dpLogo from './assets/dp/dp_logo_nocolor.svg'
 import { CarbonEmissions } from './pages/CarbonEmissions';
 import { Energy } from './pages/Energy';
 import { EWaste } from './pages/EWaste';
+import { Cryptocurrency } from './pages/Cryptocurrency';
 import { Settings } from './pages/Settings';
 import {
   BrowserRouter,
@@ -53,6 +54,9 @@ function App(): JSX.Element {
               <Menu.Item className = "Header-menu-element" id="Header-menu-element-item3" key="EWaste">
                   <Link to="/e-waste">{lang.header.e_waste}</Link>
               </Menu.Item>
+              <Menu.Item className = "Header-menu-element" id="Header-menu-element-item3" key="Cryptocurrency">
+                  <Link to="/cryptocurrency">Cryptocurrency</Link>
+              </Menu.Item>
               <Menu.Item className = "Header-menu-element" id="Header-menu-element-settings" onClick={settingsToggle}>
                   <Settings {...lang}/>
               </Menu.Item>
@@ -66,6 +70,7 @@ function App(): JSX.Element {
           <Route path="/energy" children={Energy(lang)}/>
           <Route path="/carbon-emissions" children={CarbonEmissions(lang)} />
           <Route path="/e-waste" children={EWaste(lang)}/>
+          <Route path="/cryptocurrency" children={Cryptocurrency(lang)}/>
         </div>
       </BrowserRouter>
     </div>
