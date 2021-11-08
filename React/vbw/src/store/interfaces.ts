@@ -1,3 +1,11 @@
+export interface Coin {
+  coin: string;
+  network_hashrate: number;
+  algorithm: string;
+  ratedPower: number;
+}
+
+////////////////////////////////////////////////////////////////////////////////
 export interface Language {
     title: string;
     authors: string;

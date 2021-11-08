@@ -1,6 +1,7 @@
 
 import { ApplicationAction } from "./actions"
-import { Language } from "../assets/lang/_lang_interfaces";
+import { Language } from "./interfaces";
+import { Coin } from "./interfaces";
 
 import en_US from "../assets/lang/en_US.json";
 import ru_RU from "../assets/lang/ru_RU.json";
@@ -19,11 +20,13 @@ const freFRE = fre_FRE;
 export interface ApplicatonState {
   settings_open: boolean;
   language: Language;
+  coins: Coin[];
 }
 
 const initialState = {
   settings_open: false,
   language: enUS,
+  coins: []
 }
 
 export const reducers = (state: ApplicatonState = initialState, action: ApplicationAction) => {
@@ -38,6 +41,12 @@ export const reducers = (state: ApplicatonState = initialState, action: Applicat
       return {
         ...state,
         language: eval(action.payload),
+      }
+    
+    case "SET_COINS":
+      return {
+        ...state,
+        coins: action.payload,
       }
 
     default:

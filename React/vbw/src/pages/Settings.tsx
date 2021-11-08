@@ -3,7 +3,7 @@ import { SettingOutlined }  from '@ant-design/icons'
 import { useTypedSelector } from '../store';
 import { useDispatch } from 'react-redux';
 import { switchLanguage } from '../store/actions';
-import { Language } from '../assets/lang/_lang_interfaces';
+import { Language } from '../store/interfaces';
 
 export function Settings(lang: Language): JSX.Element{
 
