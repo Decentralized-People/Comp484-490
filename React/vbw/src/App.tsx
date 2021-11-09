@@ -17,15 +17,12 @@ import { useDispatch } from "react-redux";
 import { toggleSettings } from './store/actions';
 import { useTypedSelector } from './store';
 
-import en_US from "./assets/lang/en_US.json";
-import ru_RU from "./assets/lang/ru_RU.json";
 
 function App(): JSX.Element {
 
 
   const lang = useTypedSelector((state) => state.reducers.language);
-  const energy = Energy(lang);
-
+  
   const dispatch = useDispatch();
 
   function settingsToggle() {

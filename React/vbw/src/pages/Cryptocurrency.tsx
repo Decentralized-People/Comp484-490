@@ -8,9 +8,6 @@ import { CoinGraph } from "./CoinGraph";
 
 export function Cryptocurrency(lang: Language){
 
-    const grabber = new coinGrabber();
-    grabber.componentDidMount();
-
 
     return(
         <>
@@ -23,7 +20,6 @@ export function Cryptocurrency(lang: Language){
                 </Tabs.TabPane>
             </Tabs>
             <Typography.Title level={3} className="Energy-text">
-                {grabber.url}
                 <CoinGraph {...lang} ></CoinGraph>
             </Typography.Title>
         </>

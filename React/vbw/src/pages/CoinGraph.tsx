@@ -1,23 +1,22 @@
 
 
 import React, { useEffect } from "react";
-import { Typography, Tabs } from 'antd';
 import './Energy.css'
 import { Language } from "../store/interfaces";
 import { Coin } from "../store/interfaces";
 import axios, { AxiosResponse } from 'axios';
+import { useDispatch, useStore } from "react-redux";
+import { useTypedSelector } from "../store";
 
 export function CoinGraph(lang: Language): JSX.Element{
+    
+    const dispatch = useDispatch();
 
+    const coinsToPrint: Coin[] = useTypedSelector((state) => state.reducers.coins);
 
     useEffect(() => {
 
         const coins: Coin[] = [];
-
-        interface CoinsAlgs{
-            coins: string;
-            algs: string;
-        }
 
         interface CoinData{
             algorithm: string;
@@ -35,31 +34,45 @@ export function CoinGraph(lang: Language): JSX.Element{
             volume: number;
         };
 
-        const coinlist: CoinsAlgs = {
-            coins: "BTC,ETH,BCH,BSV,LTC,XMR,DASH,ETC,ZEC,DOGE,BTG,DCR,RVN,MONA,BTM,SC,DGB,ZEN,KMD,BCN",
-            algs: "SHA-256,Scrypt,X11,Equihash,Blake,Tensority,Sia,CryptoNight,Lyra2REv2"
-        };
+        const coinList: Map<string, boolean> = new Map([
+            ['BTC', true],
+            ['ETH', true],
+            ['BCH', true],
+            ['BSV', true],
+            ['LTC', true],
+            ['XMR', true],
+            ['DASH', true],
+            ['ETC', true],
+            ['ZEC', true],
+            ['DOGE', true],
+            ['BTG', true],
+            ['DCR', true],
+            ['RVN', true],
+            ['MONA', true],
+            ['BTM', true],
+            ['SC', true],
+            ['DGB', true],
+            ['ZEN', true],
+            ['KMD', true],
+            ['BCN', true],
+        ]);
 
-        //For selecting different JSON properties
-        const vals = ["coin","algorithm","network_hashrate","rated-power"]
-
-        let hashEfficiency = new Map<string, number>()
-
-        hashEfficiency.set("SHA-256", 25300000000);
-        hashEfficiency.set("Scrypt", 827000);
-        hashEfficiency.set("X11", 12200000);
-        hashEfficiency.set("Equihash", 90);
-        hashEfficiency.set("Blake", 18900000000);
-        hashEfficiency.set("Tensority", 182);
-        hashEfficiency.set("Sia", 1220000000);
-        hashEfficiency.set("CryptoNight", 500);
-        hashEfficiency.set("Lyra2REv2", 11700000);
-        
+        let hashEfficiency: Map<string, number> = new Map([
+            ['SHA-256', 25300000000],
+            ['Scrypt', 827000],
+            ['X11', 12200000],
+            ['Equihash', 90],
+            ['Blake', 18900000000],
+            ['Tensority', 182],
+            ['Sia', 1220000000],
+            ['CryptoNight', 500],
+            ['Lyra2REv2', 11700000],
+        ]);
 
         //URL to fetch from
         const url = "https://api.minerstat.com/v2/coins";
 
-        function fetchData(data: CoinData[]){
+        function prepareData(data: CoinData[]){
             data.forEach(coin => {
                 const coin_data: Coin = {
                     coin: coin.coin,
@@ -70,21 +83,34 @@ export function CoinGraph(lang: Language): JSX.Element{
                 coins.push(coin_data);
             });
             console.log(coins)
+            saveCoins(coins);
         }
 
-        async function getData(){         
+        function saveCoins(coins: Coin[]){
+            dispatch({type: "SET_COINS", payload: coins});
+        }
+
+        async function fetchData(){         
             await axios.get(url).then((response: AxiosResponse<CoinData[]>) => {
-                fetchData(response.data);
+                prepareData(response.data.filter(coin => coinList.has(coin.coin)));
             });
-            
         }
-
-        getData();
+        
+        fetchData();
 
     })
     return(
         <div>
-            hello
+            {coinsToPrint.map(coin => {
+                return(
+                    <div>
+                        <h5>{coin.coin}</h5>
+                        <h5>{coin.algorithm}</h5>
+                        <h5>{coin.ratedPower}</h5>
+                        <br></br>
+                    </div>
+                )
+            })} 
         </div>
     )
 }

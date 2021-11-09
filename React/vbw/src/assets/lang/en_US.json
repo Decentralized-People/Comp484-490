@@ -4,8 +4,8 @@
     "header": {
         "energy": "Energy",
         "carbon_emissions": "Carbon Emissions",
-        "e_waste" : "E-waste"  
-    },
+        "e_waste" : "E-waste" 
+        },
 
     "side_bar" : {
         "tab1" : "Tab 1",
