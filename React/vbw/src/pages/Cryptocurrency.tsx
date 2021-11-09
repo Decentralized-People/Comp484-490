@@ -1,10 +1,7 @@
 import React from "react";
 import { Typography, Tabs } from 'antd';
-import './Energy.css'
 import { Language } from "../store/interfaces";
-import coinGrabber from "./coinGrabber.jsx";
 import { CoinGraph } from "./CoinGraph";
-
 
 export function Cryptocurrency(lang: Language){
 

@@ -54,6 +54,7 @@ export const reducers = (state: ApplicatonState = initialState, action: Applicat
     case "SWITCH_LANGUAGE":
       return {
         ...state,
+        // eslint-disable-next-line
         language: eval(action.payload),
       }
     

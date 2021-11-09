@@ -1,3 +1,7 @@
+////////////////////////////////////////////////////////////////////////////////
+//COIN GRAPH
+////////////////////////////////////////////////////////////////////////////////
+
 export interface Coin {
   coin: string;
   network_hashrate: number;
@@ -5,6 +9,31 @@ export interface Coin {
   ratedPower: number;
 }
 
+export interface ResponsivePieInterface {
+  id: string;
+  label: string;
+  value: number;
+  color: number;
+}
+
+export interface CoinData{
+  algorithm: string;
+  coin: string;
+  difficulty: number;
+  id: string;
+  name: string;
+  network_hashrate: number;
+  price: number;
+  reward: number;
+  reward_block: number;
+  reward_unit: string;
+  type: string;
+  updated: number;
+  volume: number;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+//LANGUAGE TEMPLATE
 ////////////////////////////////////////////////////////////////////////////////
 export interface Language {
     title: string;
