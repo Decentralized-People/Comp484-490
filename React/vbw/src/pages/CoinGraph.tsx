@@ -76,7 +76,7 @@ export function CoinGraph(lang: Language): JSX.Element{
                     coin: coin.coin,
                     network_hashrate: coin.network_hashrate,
                     algorithm: coin.algorithm,
-                    ratedPower: hashEfficiency.has(coin.algorithm) ? coin.network_hashrate * (hashEfficiency.get(coin.algorithm) || 0) / 1000000 : -1
+                    ratedPower: hashEfficiency.has(coin.algorithm) ? coin.network_hashrate / (hashEfficiency.get(coin.algorithm) || 0) / 1000000000 : -1
                 }
                 coins.push(coin_data);
             });
