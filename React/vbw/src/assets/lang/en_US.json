@@ -8,9 +8,9 @@
         },
 
     "side_bar" : {
-        "tab1" : "Tab 1",
-        "tab2" : "Tab 2",
-        "tab3" : "Tab 3"
+        "tab1" : "Internet Infrastructure",
+        "tab2" : "Personal Usage",
+        "tab3" : "Cryptocurrency"
     },
 
     "settings" : {
