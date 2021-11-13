@@ -30,6 +30,7 @@ export interface ApplicatonState {
   settings_open: boolean;
   language: Language;
   coins: Coin[];
+  ukMAP: string;
 }
 
 const initialState = {
@@ -40,7 +41,8 @@ const initialState = {
     network_hashrate: 0,
     algorithm: "SHA-256",
     ratedPower: 0
-  }]
+  }],
+  ukMAP: "<h1>Loading...</h1>",
 }
 
 export const reducers = (state: ApplicatonState = initialState, action: ApplicationAction) => {
@@ -63,6 +65,12 @@ export const reducers = (state: ApplicatonState = initialState, action: Applicat
         ...state,
         coins: action.payload,
       }
+
+    case "UPDATE_UKMAP":
+      return {
+        ...state,
+        ukMAP: action.payload,
+      } 
 
     default:
       return state;

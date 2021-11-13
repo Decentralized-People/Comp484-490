@@ -1,12 +1,11 @@
 
 
 import { useEffect } from "react";
-import './Energy.css'
-import { Language, ResponsivePieInterface, CoinData } from "../store/interfaces";
-import { Coin } from "../store/interfaces";
+import { Language, ResponsivePieInterface, CoinData } from "../../store/interfaces";
+import { Coin } from "../../store/interfaces";
 import axios, { AxiosResponse } from 'axios';
 import { useDispatch } from "react-redux";
-import { useTypedSelector } from "../store";
+import { useTypedSelector } from "../../store";
 import { ResponsivePie } from '@nivo/pie'
 import './CoinGraph.css'
 
