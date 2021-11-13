@@ -2,6 +2,7 @@ import React from "react";
 import { Typography, Tabs } from 'antd';
 import './Energy.css'
 import { Language } from "../store/interfaces";
+import { CoinGraph } from "./CoinGraph";
 
 export function Energy(lang: Language){
     return(
@@ -16,6 +17,8 @@ export function Energy(lang: Language){
             </Tabs>
             <Typography.Title level={3} className="Energy-text">
                 {lang.sections.energy.title}
+
+                <CoinGraph {...lang} ></CoinGraph>
             </Typography.Title>
         </>
     )
