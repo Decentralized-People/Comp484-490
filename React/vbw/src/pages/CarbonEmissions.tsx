@@ -17,6 +17,7 @@ export function CarbonEmissions(lang: Language){
             </Tabs>
             <Typography.Title level={3} className="CarbonEmissions-text">
                 {lang.sections.carbon_emissions.title}
+                Global CO2 emissions from fossil fuels
                 https://ourworldindata.org/co2-emissions
                 <WorldCarbonEmissionsMap {...lang}></WorldCarbonEmissionsMap>
             </Typography.Title>
