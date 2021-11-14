@@ -13,41 +13,20 @@ export function UKCarbonGraph(lang: Language): JSX.Element{
     
     const dispatch = useDispatch();
     const map = useTypedSelector((state) => state.reducers.ukMAP);
-    const url = "https://carbonintensity.org.uk/";
-
+    const url = "https://ourworldindata.org/co2-emissions";
+    const className = ".GrapherComponent"
 
     useEffect(() => {
-
         fetchURL(url)
-
-
-        async function updateMap(){
-
-
-            // Get data from the link
-            //const $ = await fetchURL(url);
-
-           fetchURL(url)
-
-            // Get the map part from the data
-            //let newMap: string = $(".cookie-paragraph").html();
-
-            // alert($)
-
-            // // Set new map
-            // dispatch(saveMap($||"Error.")); 
-        
-        }
     })    
 
     async function fetchURL(url: string) {
         const data =  await axios.get(url)
             .then(response => {
                 const $ = cheerio.load(response.data);
-                return $;
+                dispatch(saveMap($(className).html()||"Error while extracting data..."));
             })
-            .catch(error => {
-                console.log(error)})
+            .catch(error => { console.log(error) })
         console.log(data)
     }
 

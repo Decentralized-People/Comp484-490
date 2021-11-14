@@ -2,6 +2,7 @@ import React from "react"
 import { Typography, Tabs } from 'antd';
 import './CarbonEmissions.css'
 import { Language } from "../store/interfaces";
+import { WorldCarbonEmissionsMap } from "./graphs/WorldCarbonEmissionsMap";
 
 export function CarbonEmissions(lang: Language){
     return(
@@ -16,6 +17,8 @@ export function CarbonEmissions(lang: Language){
             </Tabs>
             <Typography.Title level={3} className="CarbonEmissions-text">
                 {lang.sections.carbon_emissions.title}
+                https://ourworldindata.org/co2-emissions
+                <WorldCarbonEmissionsMap {...lang}></WorldCarbonEmissionsMap>
             </Typography.Title>
         </>
     )
