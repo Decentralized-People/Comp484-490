@@ -11,6 +11,7 @@ import './CoinGraph.css'
 
 
 export function CoinGraph(lang: Language): JSX.Element{
+
     
     const dispatch = useDispatch();
 
@@ -93,9 +94,11 @@ export function CoinGraph(lang: Language): JSX.Element{
         });
         return coins.sort((a, b) => b.ratedPower - a.ratedPower);
     }
-
+    
     function saveCoins(coins: Coin[]){
-        dispatch({type: "SET_COINS", payload: coins});
+        if (coinsToPrint.length === 1) {
+            dispatch({type: "SET_COINS", payload: coins});
+        }   
     }
 
     async function fetchData(){         

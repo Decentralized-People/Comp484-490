@@ -13,19 +13,21 @@ export function UKCarbonGraph(lang: Language): JSX.Element{
     
     const dispatch = useDispatch();
     const map = useTypedSelector((state) => state.reducers.ukMAP);
+    const url = "https://carbonintensity.org.uk/";
+
 
     useEffect(() => {
 
-        updateMap()
+        fetchURL(url)
+
 
         async function updateMap(){
 
-            const url = "https://carbonintensity.org.uk/";
 
             // Get data from the link
             //const $ = await fetchURL(url);
 
-            console.log(fetchURL(url))
+           fetchURL(url)
 
             // Get the map part from the data
             //let newMap: string = $(".cookie-paragraph").html();
@@ -36,16 +38,22 @@ export function UKCarbonGraph(lang: Language): JSX.Element{
             // dispatch(saveMap($||"Error.")); 
         
         }
-
-        async function fetchURL(url: string) {
-            return cheerio.load(await axios.get(url));
-            //return cheerio.load(response.data);
-        }
-
-        function saveMap(map: string){
-            dispatch({type: "UPDATE_UKMAP", payload: map});
-        }
     })    
+
+    async function fetchURL(url: string) {
+        const data =  await axios.get(url)
+            .then(response => {
+                const $ = cheerio.load(response.data);
+                return $;
+            })
+            .catch(error => {
+                console.log(error)})
+        console.log(data)
+    }
+
+    function saveMap(map: string){
+        dispatch({type: "UPDATE_UKMAP", payload: map});
+    }
 
     return(
         <div>
