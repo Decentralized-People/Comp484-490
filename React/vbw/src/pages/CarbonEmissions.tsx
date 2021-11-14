@@ -3,6 +3,7 @@ import { Typography, Tabs } from 'antd';
 import './CarbonEmissions.css'
 import { Language } from "../store/interfaces";
 import { WorldCarbonEmissionsMap } from "./graphs/WorldCarbonEmissionsMap";
+import { SiberianGlobalWarming } from "./sections/SiberianGlobalWarming";
 
 export function CarbonEmissions(lang: Language){
     return(
@@ -15,12 +16,13 @@ export function CarbonEmissions(lang: Language){
                 <Tabs.TabPane tab={lang.side_bar.tab3} key="3">
                 </Tabs.TabPane>
             </Tabs>
-            <Typography.Title level={3} className="CarbonEmissions-text">
+            <div className="CarbonEmissions-text">
                 {lang.sections.carbon_emissions.title}
                 Global CO2 emissions from fossil fuels
                 https://ourworldindata.org/co2-emissions
                 <WorldCarbonEmissionsMap {...lang}></WorldCarbonEmissionsMap>
-            </Typography.Title>
+                <SiberianGlobalWarming {...lang}></SiberianGlobalWarming>   
+            </div>
         </>
     )
 }

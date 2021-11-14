@@ -1,0 +1,12 @@
+.SiberianGlobalWarming-FlexContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.SiberianGlobalWarming-Description{
+    width: 100%;
+    margin-left: 10rm;
+}
+.SiberianGlobalWarming-YouTube-container{
+    width: 100%;
+}

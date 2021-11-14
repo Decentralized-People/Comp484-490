@@ -3,7 +3,6 @@ import { Typography, Tabs } from 'antd';
 import './Energy.css'
 import { Language } from "../store/interfaces";
 import { CoinGraph } from "./graphs/CoinGraph";
-import { UKCarbonGraph } from "./graphs/CarbonGraphUK";
 
 export function Energy(lang: Language){
     return(
@@ -20,7 +19,6 @@ export function Energy(lang: Language){
                 {lang.sections.energy.title}
 
                 <CoinGraph {...lang} ></CoinGraph>
-                <UKCarbonGraph {...lang}></UKCarbonGraph>
 
             </Typography.Title>
         </>
