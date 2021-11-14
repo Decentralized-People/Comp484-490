@@ -6,41 +6,40 @@ import './CarbonGraphUK.css'
 import { useDispatch } from "react-redux";
 import { useTypedSelector } from "../../store";
 import ReactHtmlParser from 'react-html-parser';
-
+import axios from 'axios';
+import cheerio from 'cheerio';
 
 export function UKCarbonGraph(lang: Language): JSX.Element{
     
     const dispatch = useDispatch();
     const map = useTypedSelector((state) => state.reducers.ukMAP);
 
-
     useEffect(() => {
-
-        // eslint-disable-next-line @typescript-eslint/no-var-requires
-        const axios = require("axios");
-        // eslint-disable-next-line @typescript-eslint/no-var-requires
-        const cheerio = require("cheerio");
 
         updateMap()
 
         async function updateMap(){
 
-            const url = "https://www.carbonintensity.org.uk/";
+            const url = "https://carbonintensity.org.uk/";
 
             // Get data from the link
-            const $ = await fetchURL(url);
+            //const $ = await fetchURL(url);
+
+            console.log(fetchURL(url))
 
             // Get the map part from the data
-            let newMap = $(".map").html();
+            //let newMap: string = $(".cookie-paragraph").html();
 
+            // alert($)
 
-            // Set new map
-            dispatch(saveMap(newMap)); 
+            // // Set new map
+            // dispatch(saveMap($||"Error.")); 
+        
         }
 
         async function fetchURL(url: string) {
-            const { data } = await axios.get(url);
-            return cheerio.load(data);
+            return cheerio.load(await axios.get(url));
+            //return cheerio.load(response.data);
         }
 
         function saveMap(map: string){
@@ -48,7 +47,6 @@ export function UKCarbonGraph(lang: Language): JSX.Element{
         }
     })    
 
-    
     return(
         <div>
             <div className="Uk-carbon-graph-container">
@@ -56,5 +54,5 @@ export function UKCarbonGraph(lang: Language): JSX.Element{
             </div>
         </div>
     )
-        
+       
 }

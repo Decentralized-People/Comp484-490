@@ -20,7 +20,7 @@ export function Energy(lang: Language){
                 {lang.sections.energy.title}
 
                 <CoinGraph {...lang} ></CoinGraph>
-                <UKCarbonGraph {...lang}></UKCarbonGraph>
+                 {/* <UKCarbonGraph {...lang}></UKCarbonGraph> */}
 
             </Typography.Title>
         </>

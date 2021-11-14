@@ -16,6 +16,8 @@ export function CoinGraph(lang: Language): JSX.Element{
 
     const coinsToPrint: Coin[] = useTypedSelector((state) => state.reducers.coins);
 
+    const graphData = toGraphData(coinsToPrint);
+
     function toGraphData(coins: Coin[]): ResponsivePieInterface[] {
         return coins.map((coin: Coin) => {
             return {
@@ -27,80 +29,86 @@ export function CoinGraph(lang: Language): JSX.Element{
         })
     }
 
+    const coinList: Map<string, boolean> = new Map([
+        ['BTC', true],
+        ['ETH', true],
+        ['BCH', true],
+        ['BSV', true],
+        ['LTC', true],
+        ['XMR', true],
+        ['DASH', true],
+        ['ETC', true],
+        ['ZEC', true],
+        ['DOGE', true],
+        ['BTG', true],
+        ['DCR', true],
+        ['RVN', true],
+        ['MONA', true],
+        ['BTM', true],
+        ['SC', true],
+        ['DGB', true],
+        ['ZEN', true],
+        ['KMD', true],
+        ['BCN', true],
+    ]);
+
+    let hashEfficiency: Map<string, number> = new Map([
+        ['SHA-256', 25300000000],
+        ['Scrypt', 827000],
+        ['X11', 12200000],
+        ['Equihash', 90],
+        ['Blake', 18900000000],
+        ['Tensority', 182],
+        ['Sia', 1220000000],
+        ['CryptoNight', 500],
+        ['Lyra2REv2', 11700000],
+    ]);
+
+    //URL to fetch from
+    const url = "https://api.minerstat.com/v2/coins";
+
     useEffect(() => {
 
+        fetchData().then((response: CoinData[]) => {
+            const newCoins = prepareData(response);
+            saveCoins(newCoins);
+        });
+        
+    }) 
+    
+    function prepareData(data: CoinData[]){
         const coins: Coin[] = [];
-
-        const coinList: Map<string, boolean> = new Map([
-            ['BTC', true],
-            ['ETH', true],
-            ['BCH', true],
-            ['BSV', true],
-            ['LTC', true],
-            ['XMR', true],
-            ['DASH', true],
-            ['ETC', true],
-            ['ZEC', true],
-            ['DOGE', true],
-            ['BTG', true],
-            ['DCR', true],
-            ['RVN', true],
-            ['MONA', true],
-            ['BTM', true],
-            ['SC', true],
-            ['DGB', true],
-            ['ZEN', true],
-            ['KMD', true],
-            ['BCN', true],
-        ]);
-
-        let hashEfficiency: Map<string, number> = new Map([
-            ['SHA-256', 25300000000],
-            ['Scrypt', 827000],
-            ['X11', 12200000],
-            ['Equihash', 90],
-            ['Blake', 18900000000],
-            ['Tensority', 182],
-            ['Sia', 1220000000],
-            ['CryptoNight', 500],
-            ['Lyra2REv2', 11700000],
-        ]);
-
-        //URL to fetch from
-        const url = "https://api.minerstat.com/v2/coins";
-
-        function prepareData(data: CoinData[]){
-            data.forEach(coin => {
-                const coin_data: Coin = {
-                    coin: coin.coin,
-                    network_hashrate: coin.network_hashrate,
-                    algorithm: coin.algorithm,
-                    ratedPower: hashEfficiency.has(coin.algorithm) ? coin.network_hashrate / (hashEfficiency.get(coin.algorithm) || 0) / 1000000000 : -1
-                }
+        let CoinMap = new Map<string, boolean>();
+        data.forEach(coin => {
+            const coin_data: Coin = {
+                coin: coin.coin,
+                network_hashrate: coin.network_hashrate,
+                algorithm: coin.algorithm,
+                ratedPower: hashEfficiency.has(coin.algorithm) ? coin.network_hashrate / (hashEfficiency.get(coin.algorithm) || 0) / 1000000000 : -1
+            }
+            if (coin_data.ratedPower !== -1 && !CoinMap.has(coin_data.coin)) {
                 coins.push(coin_data);
-            });
-            console.log(coins)
-            saveCoins(coins);
-        }
+                CoinMap.set(coin_data.coin, true);
+            }
+        });
+        return coins.sort((a, b) => b.ratedPower - a.ratedPower);
+    }
 
-        function saveCoins(coins: Coin[]){
-            dispatch({type: "SET_COINS", payload: coins});
-        }
+    function saveCoins(coins: Coin[]){
+        dispatch({type: "SET_COINS", payload: coins});
+    }
 
-        async function fetchData(){         
-            await axios.get(url).then((response: AxiosResponse<CoinData[]>) => {
-                prepareData(response.data.filter(coin => coinList.has(coin.coin)));
-            });
-        }
-        fetchData();
-
-    })    
+    async function fetchData(){         
+        return await axios.get(url).then((response: AxiosResponse<CoinData[]>) => {
+            return (response.data.filter(coin => coinList.has(coin.coin)));
+        });
+    }
     
     return(
         <div>
             <div className="Pie-chart-container">
             <ResponsivePie
-                data={toGraphData(coinsToPrint)}
+                data={graphData}
                 margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
                 innerRadius={0.5}
                 padAngle={0.7}

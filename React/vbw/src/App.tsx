@@ -35,7 +35,7 @@ function App(): JSX.Element {
         {/* HEADER: DP Logo -> Settings -> Energy -> Carbon Emissions -> E-Waste */}
         <header className="Header">
           <Menu mode = "horizontal" className = "Header-menu" defaultSelectedKeys={["Energy"]}>
-              <Menu.Item className = "Header-menu-element" id="Header-menu-element-logo" disabled={true}>
+              <Menu.Item className = "Header-menu-element" id="Header-menu-element-logo" key="Icon" disabled={true}>
                   <div className="Header-dp">
                       <img src = {dpLogo} className = "Header-dp-logo" alt="Decentralized People logo"/>
                       <h3 className="Header-dp-text">{lang.authors}</h3>
@@ -50,7 +50,7 @@ function App(): JSX.Element {
               <Menu.Item className = "Header-menu-element" id="Header-menu-element-item3" key="EWaste">
                   <Link to="/e-waste">{lang.header.e_waste}</Link>
               </Menu.Item>
-              <Menu.Item className = "Header-menu-element" id="Header-menu-element-settings" onClick={settingsToggle}>
+              <Menu.Item className = "Header-menu-element" id="Header-menu-element-settings" key="Settings" onClick={settingsToggle}>
                   <Settings {...lang}/>
               </Menu.Item>
           </Menu>
