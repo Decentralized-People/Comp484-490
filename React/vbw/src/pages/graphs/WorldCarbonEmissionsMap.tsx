@@ -99,7 +99,7 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
                     features={features}
                     margin={{ top: 0, right: 0, bottom: 0, left: 0 }}
                     colors="reds"
-                    domain={[ 0, 100000000 ]}
+                    domain={[ 0, 750000000 ]}
                     unknownColor="#ffffff"
                     label="properties.name"
                     valueFormat=".2s"
@@ -137,7 +137,7 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
                     />
 
             </div>
-            <div className="WorldCarbonEmissionsMap-graph-container">
+            <div style={{height:400,width:1200}} className="WorldCarbonEmissionsMap-graph-container">
                 <ResponsiveBar
                     data={barData.map((element: CarbonEmissionsBARGraphData) => {
                         return {
@@ -147,7 +147,7 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
                     })}
                     keys={['Carbon']}
                     indexBy="Year"
-                    margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
+                    margin={{ top: 50, right: 130, bottom: 50, left: 100 }}
                     padding={0.3}
                     valueScale={{ type: 'linear' }}
                     indexScale={{ type: 'band', round: true }}
@@ -203,7 +203,7 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
                         tickRotation: 0,
                         legend: 'Carbon Emissions',
                         legendPosition: 'middle',
-                        legendOffset: -40
+                        legendOffset: -90
                     }}
                     labelSkipWidth={12}
                     labelSkipHeight={12}
