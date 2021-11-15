@@ -27,7 +27,7 @@ export function SiberianGlobalWarming(lang: Language): JSX.Element{
                 <h2>The result of carbom emissions?</h2>
                     <ul>
                         <li>
-                            The tempreture rising more than twice
+                            The temperature rising more than twice
                         </li>
                         <li>
                             22 million acres of wildfires (more than the size of Greece)
@@ -38,7 +38,7 @@ export function SiberianGlobalWarming(lang: Language): JSX.Element{
                     </ul>
                 </div>
                 <div className="SiberianGlobalWarming-YouTube-container">
-                    <YouTube opts={{ width: '100%', playerVars: { cc_lang_pref: "ru", cc_load_policy: 1 }}} videoId="Ig9BnTkmbco" />
+                    <YouTube opts={{ width: '100%'}} videoId="Ig9BnTkmbco" />
                 </div>
             </div>
         </div>
