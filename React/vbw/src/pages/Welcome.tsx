@@ -1,6 +1,3 @@
-
-// import { useTypedSelector } from "../reducers";
-// import { toggleWelcomeVisibility } from "../actions/mainActions";
 import { useDispatch } from "react-redux";
 
 import { Button, Modal } from "antd";
@@ -9,6 +6,7 @@ import Logo from "../assets/icons/dp_logo_color.svg";
 import KzooLogo from "../assets/icons/K2LineLeft 2CP.png";
 
 import "./Welcome.css";
+import { useState } from "react";
 
 /**
  * Welcome page element component.
@@ -18,25 +16,20 @@ import "./Welcome.css";
 export function Welcome(): JSX.Element {
     const dispatch = useDispatch()
 
-     // Visibility of welcome page
-    //const welcomeVisibility = useTypedSelector((state) => state.main.welcome_page_open);
-
-    // function handleOk(){
-    //     dispatch(toggleWelcomeVisibility(false))
-    // }
+    const [welcomeVisibility, setWelcomeVisibility] = useState(true);
 
     return (
         <>
          <Modal
          
-            title="Welcome to Financial Literatus" 
+            title="Welcome to projectVBW" 
             centered={true}
-            visible={true} 
+            visible={welcomeVisibility} 
             width={1200}
             okButtonProps={{ ghost: true }}
-            // onCancel={}
+            onCancel={() => setWelcomeVisibility(false)}
             footer={[
-                <Button key="continue" type="primary">
+                <Button key="continue" type="primary" onClick = {() => setWelcomeVisibility(false)}>
                   Continue
                 </Button>
               ]}
@@ -50,7 +43,7 @@ export function Welcome(): JSX.Element {
                             alt="Logo"
                         ></img>
                         <div className="Descripntion-welcome-container-q">
-                                <h3>Exploring the Impact of the Internet</h3>
+                                <h1>Exploring the Impact of the Internet</h1>
                         </div>
                     </div>
                     <p className="Description-welcome-text">
