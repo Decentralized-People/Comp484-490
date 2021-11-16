@@ -4,6 +4,8 @@ import './CarbonEmissions.css'
 import { Language } from "../store/interfaces";
 import { WorldCarbonEmissionsMap } from "./graphs/WorldCarbonEmissionsMap";
 import { SiberianGlobalWarming } from "./sections/SiberianGlobalWarming";
+import { CarbonConclusion } from "./sections/CarbonConclusion";
+import { CarbonIntro } from "./sections/CarbonIntro";
 
 export function CarbonEmissions(lang: Language){
     return(
@@ -20,8 +22,10 @@ export function CarbonEmissions(lang: Language){
                 {lang.sections.carbon_emissions.title}
                 Global CO2 emissions from fossil fuels
                 https://ourworldindata.org/co2-emissions
+                <CarbonIntro {...lang}></CarbonIntro>
                 <WorldCarbonEmissionsMap {...lang}></WorldCarbonEmissionsMap>
-                <SiberianGlobalWarming {...lang}></SiberianGlobalWarming>   
+                <SiberianGlobalWarming {...lang}></SiberianGlobalWarming>
+                <CarbonConclusion {...lang}></CarbonConclusion>  
             </div>
         </>
     )

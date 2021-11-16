@@ -2,9 +2,11 @@ import React from "react";
 import { Typography, Tabs } from 'antd';
 import './Energy.css'
 import { Language } from "../store/interfaces";
-import { CoinGraph } from "./graphs/CoinGraph";
 import { CryptoEnergies } from "./sections/CryptoEnergies";
-
+import { InfraEnergies } from "./sections/InfraEnergies";
+import { PersonalEnergies } from "./sections/PersonalEnergies";
+import { EnergyIntro } from "./sections/EnergyIntro";
+import { EnergyConclusion } from "./sections/EnergyConclusion";
 export function Energy(lang: Language){
     return(
         <>
@@ -18,9 +20,11 @@ export function Energy(lang: Language){
             </Tabs>
             <Typography.Title level={3} className="Energy-text">
                 {lang.sections.energy.title}
+                <EnergyIntro {...lang}> </EnergyIntro>
+                <InfraEnergies {...lang}> </InfraEnergies>
+                <PersonalEnergies {...lang}> </PersonalEnergies>
                 <CryptoEnergies {...lang}></CryptoEnergies>
-                <CoinGraph {...lang} ></CoinGraph>
-
+                <EnergyConclusion {...lang}></EnergyConclusion>
             </Typography.Title>
         </>
     )

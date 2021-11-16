@@ -1,0 +1,9 @@
+.CarbonIntro-FlexContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.CarbonIntro-Description{
+    width: 100%;
+    margin-left: 10rm;
+}
