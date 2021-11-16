@@ -40,7 +40,6 @@
     flex-direction: column;
 }
 .Descripntion-welcome-container-q{
-    margin-left: auto;
     margin-right: auto;
 }
     .Description-welcome-q{
@@ -55,9 +54,22 @@
 }
 .Description-welcome-text{
     text-align: left;
-    margin-top: auto;
 }
 .Developers-mentor-repository{
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
 }
+
+@media screen and (max-width: 800px) {
+    .Logo-welcome{
+        height: 0rem;
+        visibility: hidden;
+    }
+    .Logo-text{
+        flex-direction: column;
+        
+    }
+    .Container-modal{
+        flex-direction: column;
+    }
+}
+
