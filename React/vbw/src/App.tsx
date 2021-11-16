@@ -15,6 +15,7 @@ import {
 import { useDispatch } from "react-redux";
 import { toggleSettings } from './store/actions';
 import { useTypedSelector } from './store';
+import { Welcome } from './pages/Welcome';
 
 
 function App(): JSX.Element {
@@ -57,6 +58,7 @@ function App(): JSX.Element {
         </header>
         {/* ////////////////////////////////////////////////////////////////////// */}
         <div className="Body">
+          <Welcome></Welcome>
           <Route path="/" />
           <Redirect to="/energy"></Redirect>
           <Route path="/energy" children={Energy(lang)}/>
