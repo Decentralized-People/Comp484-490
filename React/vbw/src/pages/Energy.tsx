@@ -3,6 +3,7 @@ import { Typography, Tabs } from 'antd';
 import './Energy.css'
 import { Language } from "../store/interfaces";
 import { CoinGraph } from "./graphs/CoinGraph";
+import { CryptoEnergies } from "./sections/CryptoEnergies";
 
 export function Energy(lang: Language){
     return(
@@ -17,7 +18,7 @@ export function Energy(lang: Language){
             </Tabs>
             <Typography.Title level={3} className="Energy-text">
                 {lang.sections.energy.title}
-
+                <CryptoEnergies {...lang}></CryptoEnergies>
                 <CoinGraph {...lang} ></CoinGraph>
 
             </Typography.Title>
