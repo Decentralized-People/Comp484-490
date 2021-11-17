@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { Language } from "../../store/interfaces";
-import './CarbonGraphUK.css'
 import { ResponsiveChoropleth } from '@nivo/geo'
 import { ResponsiveBar } from '@nivo/bar'
 

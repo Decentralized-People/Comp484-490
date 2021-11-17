@@ -1,0 +1,12 @@
+
+.Ewaste-iframe-map{
+    margin-top: 2rem;
+    width: 80vw;
+    height: 42vw;
+    overflow-y: scroll;
+
+    border: 1.5px solid green;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
