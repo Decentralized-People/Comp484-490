@@ -24,7 +24,7 @@ export function SiberianGlobalWarming(lang: Language): JSX.Element{
             <div className="SiberianGlobalWarming-FlexContainer">
                 <div className="SiberianGlobalWarming-Description">
                 <h1>Global warming in Siberia</h1>
-                <h2>The result of carbom emissions?</h2>
+                <h2>The result of carbon emissions?</h2>
                     <ul>
                         <li>
                             The temperature rising more than twice
