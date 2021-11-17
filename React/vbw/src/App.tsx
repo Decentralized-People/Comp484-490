@@ -16,7 +16,7 @@ import { useDispatch } from "react-redux";
 import { toggleSettings } from './store/actions';
 import { useTypedSelector } from './store';
 import { Welcome } from './pages/Welcome';
-
+import ReactPlayer from "react-player";
 
 function App(): JSX.Element {
 
@@ -58,12 +58,34 @@ function App(): JSX.Element {
         </header>
         {/* ////////////////////////////////////////////////////////////////////// */}
         <div className="Body">
+            {/* <ReactPlayer
+            className="videoTag"
+            playing={true}
+            loop={true}
+            moot={true}
+            height="100vh"
+            width="100vw"
+            config={{
+              file: {
+                attributes: {
+                  style: {
+                    width: "100%",
+                    height: "100vh",
+                    objectFit: "cover",
+                    zIndex: "-1"
+                  },
+                },
+              },
+            }}
+            url={'https://youtu.be/by7J7ppPdFc'}
+          /> */}
           <Welcome></Welcome>
+          <div className="Background"></div>
           <Route path="/" />
-          <Redirect to="/energy"></Redirect>
-          <Route path="/energy" children={Energy(lang)}/>
-          <Route path="/carbon-emissions" children={CarbonEmissions(lang)} />
-          <Route path="/e-waste" children={EWaste(lang)}/>
+            <Redirect to="/energy"></Redirect>
+            <Route path="/energy" children={Energy(lang)}/>
+            <Route path="/carbon-emissions" children={CarbonEmissions(lang)} />
+            <Route path="/e-waste" children={EWaste(lang)}/>
         </div>
       </BrowserRouter>
     </div>
