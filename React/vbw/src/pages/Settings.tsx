@@ -1,9 +1,11 @@
-import { Drawer } from 'antd';
+import { Button, Drawer } from 'antd';
 import { SettingOutlined }  from '@ant-design/icons'
 import { useTypedSelector } from '../store';
 import { useDispatch } from 'react-redux';
 import { switchLanguage } from '../store/actions';
 import { Language } from '../store/interfaces';
+import Flag from 'national-flag-icons';
+import "./Settings.css"
 
 export function Settings(lang: Language): JSX.Element{
 
@@ -20,17 +22,63 @@ export function Settings(lang: Language): JSX.Element{
             <div className="Settings-div">
                 <SettingOutlined/>
             </div>
-            <Drawer title={lang.settings.title} placement="right" visible={visible}>
+            <Drawer className="Settings-computer" title={lang.settings.title} placement="right" visible={visible} width="25%">
                 <p>{lang.settings.choose}...</p>
-                <button onClick={() => changeLang("geoGEO") }>Switch language to Geo</button>
-                <button onClick={() => changeLang("enUS") }>Switch language to Eng</button>
-                <button onClick={() => changeLang("ruRU") }>Switch language to Rus</button>
-                <button onClick={() => changeLang("fiFIN") }>Switch language to Fin</button>
-                <button onClick={() => changeLang("deDE") }>Switch language to Deu</button>
-                <button onClick={() => changeLang("freFRE") }>Switch language to Fre</button>
-                <button onClick={() => changeLang("spSP") }>Switch language to Spa</button>
+                
+                <div className="Language-buttons-container">
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("enUS") } block={true}> 🇺🇸 English </Button>
+                    </div>
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("ruRU") } block={true}> 🇷🇺 Russian</Button>
+                    </div>
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("fiFIN") } block={true}> 🇫🇮 Finnish</Button>
+                    </div>
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("deDE") } block={true}> 🇩🇪 Deutsch</Button>
+                    </div>
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("freFRE") } block={true}> 🇫🇷 French</Button>
+                    </div>
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("spSP") } block={true} > 🇪🇸 Spanish</Button>
+                    </div> 
+                    {/* moved to the bottom because one of us constantly move it to the top :/ */}
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("geoGEO") } block={true}> 🇬🇪 Georgian</Button>
+                    </div>
+                </div>
+            </Drawer>
 
 
+            <Drawer className="Settings-mobile" title={lang.settings.title} placement="right" visible={visible} width="100%">
+                <p>{lang.settings.choose}...</p>
+                
+                <div className="Language-buttons-container">
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("enUS") } block={true}> 🇺🇸 English </Button>
+                    </div>
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("ruRU") } block={true}> 🇷🇺 Russian</Button>
+                    </div>
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("fiFIN") } block={true}> 🇫🇮 Finnish</Button>
+                    </div>
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("deDE") } block={true}> 🇩🇪 Deutsch</Button>
+                    </div>
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("freFRE") } block={true}> 🇫🇷 French</Button>
+                    </div>
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("spSP") } block={true} > 🇪🇸 Spanish</Button>
+                    </div> 
+                    {/* moved to the bottom because one of us constantly move it to the top :/ */}
+                    <div className="Language-button">
+                        <Button onClick={() => changeLang("geoGEO") } block={true}> 🇬🇪 Georgian</Button>
+                    </div>
+                </div>
             </Drawer>
         </>
     )
