@@ -21,9 +21,6 @@ export function CarbonEmissions(lang: Language){
                 </Tabs>
             </div>
             <div className="CarbonEmissions-body-right">
-                {lang.sections.carbon_emissions.title}
-                Global CO2 emissions from fossil fuels
-                https://ourworldindata.org/co2-emissions
                 <CarbonIntro {...lang}></CarbonIntro>
                 <WorldCarbonEmissionsMap {...lang}></WorldCarbonEmissionsMap>
                 <SiberianGlobalWarming {...lang}></SiberianGlobalWarming>
