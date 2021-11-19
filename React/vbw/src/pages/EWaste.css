@@ -33,18 +33,30 @@
     margin-right: auto;
     margin-bottom: 1rem;
 }
+.Ewaste-map-labels{
+    margin-left:1rem;
+    margin-right:1rem;
+}
 .Ewaste-blockRed{
     color: red
+}
+.Ewaste-blockRed:hover{
+    color: #98cb00
 }
 
 .Ewaste-blockGreen{
     color: green
 }
+.Ewaste-blockGreen:hover{
+    color: #98cb00
+}
 
 .Ewaste-blockGreenYellow{
     color: greenyellow
 }
-
+.Ewaste-blockGreenYellow:hover{
+    color: #98cb00
+}
 
 .Ewaste-text{
     margin: 20px;
