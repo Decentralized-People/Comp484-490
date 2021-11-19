@@ -200,7 +200,7 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
                         tickSize: 5,
                         tickPadding: 5,
                         tickRotation: 0,
-                        legend: 'Carbon Emissions',
+                        legend: 'Carbon Emissions (tonnes)',
                         legendPosition: 'middle',
                         legendOffset: -90
                     }}
