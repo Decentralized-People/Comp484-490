@@ -21,10 +21,14 @@ export function EWaste(lang: Language){
                 <RecycleGraph {...lang}> </RecycleGraph>
                
                 <div className="Ewaste-map-labels-container">
-                    <div><a className="Ewaste-blockRed">&#9607;</a>No Legislation</div>
-                    <div><a className="Ewaste-blockGreen">&#9607;</a> Advanced Recycling Fee (ARF)</div>
-                    <div><a className="Ewaste-blockGreenYellow">&#9607;</a> Producer Responsibility</div>
+                    <div className="Ewaste-map-labels"><a className="Ewaste-blockRed">&#9607;</a>No Legislation</div>
+                    <div className="Ewaste-map-labels"><a className="Ewaste-blockGreen">&#9607;</a> Advanced Recycling Fee (ARF)</div>
+                    <div className="Ewaste-map-labels"><a className="Ewaste-blockGreenYellow">&#9607;</a> Producer Responsibility</div>
                 </div>
+                <p className="recycle-map-description">
+                    The map above shows which U.S. states have active legislation for the recycling of electronics. States that are either color of green, when clicked on, redirect you to a page showing the name and type of the e-waste program, bans on landfill/disposable items, website of the program, and a summary of the program. Red states, while they can be clicked on, do not give any additional information since they do not have recycling programs.
+                </p>
+
                 <p className="">E-waste pollution is a matter that is not discussed as much as it should be. Most consumers are not aware of the proper ways to recycle their e-waste, and blindly buy into companies' planned obscelescence. 
                     The rise of "greenwashing," or companies feigning environmental friendliness, has led to less transparency about how consumers should be handling their e-waste. The amount that we produce as consumers increases year by year, influenced largely by big tech companies who lead the way to an insufferable end. The cycle of buying "new" products every year is not only hurting consumers' wallets, but also our environment. This method of business is something that we as consumers need to be more aware of so that we do not need a new “iPhone” every year. Many of these devices, when improperly disposed of, lead to chemical leaching, resulting in hazardous toxins being released into our environment. When the environment is polluted it
                 </p>
