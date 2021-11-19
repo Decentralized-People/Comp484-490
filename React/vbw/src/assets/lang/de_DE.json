@@ -2,31 +2,74 @@
     "title": "ProjectVBW",
     "authors": "Decentralized People",
     "header": {
-        "energy": "Energie",
-        "carbon_emissions": "Kohleemissionen",
-        "e_waste" : "E-waste"  
-    },
-
-    "side_bar" : {
-        "tab1" : "Teil 1",
-        "tab2" : "Teil 2",
-        "tab3" : "Teil 3"
-    },
+        "energy": "Energy",
+        "carbon_emissions": "Carbon Emissions",
+        "e_waste" : "E-waste"
+        },
 
     "settings" : {
-        "title" : "Settings",
-        "choose": "Wählen Sie ihre Sprache"
+        "title" : "Einstellung",
+        "choose": "Wählen Sie ihre Sprache",
+        "en": "Englisch",
+        "ru": "Russisch",
+        "fi":  "Finnisch",
+        "de": "Deutsch",
+        "es": "Spanisch",
+        "fr": "Französisch",
+        "ge": "Georgisch"
     },
 
     "sections" : {
         "energy": {
-            "title": "Hallo Alle, ich bin Energie"
+            "InfraEnergies_h2": "Der Energiekonsum der Infrastruktur Internets",
+            "InfraEnergies_p": "Die ökologische Auswirkung am kleinsten des Internets kommt von der Infrastruktur, die einen momentaner Zustand des Internets erhalten könnte. Dieser statische Schnappschuss des Internets repräsentiert die Internetnutzung, weltweit zu halten, ohne die unterstützenden Strukturen für die zuküfntige Verwendung zu entfernen.",
+            
+            "PersonalEnergies_h2": "Der Energiekonsum des persönliches Geräts",
+            "PersonalEnergies_pp": "Die Infrastruktur am kleinsten, das Internet zu preservieren, benützt viel Energie. Wenn man ein persönlischer Gerät hat, macht man der Enerrgiekonsum größer.",
+
+            "CryptoEnergies_h2" : "Kryptowährung und Energiekonsum",
+            "CryptoEnergies_p" : "Cryptocurrency exists as an alternative to traditional money (also called fiat currency), and comes in the form of digital 'coins' (or tokens, which are derivatives of coins). The first cryptocurrency, Bitcoin, was created in 2009 in an effort to decentralize money, thus freeing it from the rule of banks and governments. This enables international transactions and removes middle-men, making transfer cheaper and more efficient. However, without the blockchain, cryptocurrency does not exist. The blockchain is a public yet immutable database, also known as a digital ledger. The data is distributed over a swarm of computers that serve as fact-checkers of the ledger. This allows the blockchain to be unbiased and trustworthy, as it is upheld by the public rather than a small group. Crypto holds value in a slightly different way than traditional money, since it is not backed by anything physical. Its value comes from its utility, such as international transfers, trade, financial freedom, and staking (earning interest for holding coins). Cryptocurrency has gained a lot of popularity as of late, possibly for good reason. However, that does not mean there is no cost. Following the methodologies of [inset the name of the paper here], we can show how many resources are dedicated to them.""Kryptowährung exisiert als eine Alternative zur traditioneller Währung. Bitcoin war zuerst im Jahre 2009 gemacht, um Währung zu dezentralisieren. Bitcoin befreite Bürger von Staat, aber ohne der Blocklaschenkette existiert Bitcoin nicht. Die Blocklaschenkette ist öffentlich aber unveränderlich. Die Daten wird zu vielen Computers übertragt mit einen Fixpunkt im Universum. Alle die Computers überprüft dieser Fixpunkt, deswegen ist er vertrauenswürdig. Weil der Wert des Kryptos kommt nicht von materielle Dinge, es kommt von dem Interesse des Publikums. ",
+            "CryptoEnergies_p2" : "Cryptocurrencies are typically decentralized and rely on communal transaction validation. Computers that are dedicated to validating crypto transactions, called 'miners', spend hours processing these transactions. Using APIs that track global crypto activity, we use a statistic called the 'hashrate' to track the computations required to validate each transaction. The hashrate refers to the number of attempts to validate a transaction, given in units hashes per second. Depending on the algorithm that the coin uses for validation, we can apply a conversion from hashrates into 'rated power', a rough estimate of how much energy is consumed by the existence of the coin. So, given the top 20 crypto currencies, we can show just how much cryptocurrencies could harm the enviornment. Consider the following hash rates for the top 20 coins:",
+            
+            "EnergyConclusion_h2": "Concluding Thoughts",
+            "EnergyConclusion_p": "These are my concluding thoughts that I'll update"
         },
         "carbon_emissions": {
-            "title": "Hallo Alle, ich bin Kohleemissionen"
+            "CarbonIntro_h1": "Translating Energy Consumption into Carbon Emission",
+            "CarbonIntro_p": "Another way that we can view this data is with the viewpoint of carbon emissions. Consider the graphs below showing global carbon emissions from fossil fuels.",
+
+            "CarbonMapTons" : "Carbon Emissions (tonnes)",
+            "CarbonMapYear" : "Year",
+        
+            "SiberianGlobalWarming" : "We hear the temperature increases every year and the ocean becomes more acidic. The biggest contribution to these causes is the excess carbon dioxide emission that is produced by us. So this brings the questions: why is it important for us to be aware of our carbon footprint and is carbon itself harmful? To break it into simple terms carbon is one of the most common elements it is everywhere in our body, air, etc. Plants used carbon dioxide to produce oxygen as a part of the cycle that supports life on earth. But what we humans are doing is producing excess carbon into the atmosphere. This can cause extreme weather changes, for example Siberia. It was the first time in 150 years in history.",
+            "SiberianGlobalWarming_h1": "Global warming in Siberia",
+            "SiberianGlobalWarming_h2" : "The result of carbon emissions?",
+            "SiberianGlobalWarming_li1" : "The temperature rising more than twice",
+            "SiberianGlobalWarming_li2" : "22 million acres of wildfires (more than the size of Greece)",
+            "SiberianGlobalWarming_li3" : "Ancient viruses threat",
+
+            "CarbonConclusion_h1" : "Concluding Thoughts",
+            "CarbonConclusion_p" : "In conclusion it is crucial for us to be more aware of our carbon footprint. It is difficult for us to go completely carbon neutral. One of the best ways we can combat the emission is to offset our carbon footprint. This means we need to find ways to negate the carbon footprint we leave individually. These could be small changes such as turning off lights when not being used. Buying second-hand items instead of buying new ones, especially electronics. Also shopping at companies who care about the environment and use environmentally friendly resources."
+
+
         },
         "e_waste": {
-            "title": "Hello Alle, ich bin E_Waste"
+            "Legend1" : "No Legislation",
+            "Legend2" : "Advanced Recycling Fee",
+            "Legend3" : "Producer Responsibility",
+            "MapDescription" : "The map above shows which U.S. states have active legislation for the recycling of electronics. States that are either color of green, when clicked on, redirect you to a page showing the name and type of the e-waste program, bans on landfill/disposable items, website of the program, and a summary of the program. Red states, while they can be clicked on, do not give any additional information since they do not have recycling programs.",
+            
+            "p1" : "E-waste pollution is a matter that is not discussed as much as it is supposed to be. Most of the consumers are not aware of the proper ways to recycle their e-waste. Especially with the increasing idea of greenwash, it is not helping the consumers to actually understand the proper ways of handling the e-waste. The amount of e-waste we produce as consumers increases year by year. The big tech companies are the biggest influence in the increasing consumption. It does not help when tech companies are coming out with new technologies every year, many companies are boosting obsolescence in technology. This is a cycle that we consumers need to be more aware of so that we do not need a new “Iphone” every year. Many of these devices can result in chemical leaching when it is not handled correctly. Which results in hazardous toxins to be released into our environment. This can pollute our water system and the soil, making it more acidic and unconditional for us to use. In the long run this can bring new illnesses too.",
+            "p2" : "Cryptocurrency mining produces large quantities of e-waste with not much attention from the media. Many of these high computational machines end up in the waste without the proper process of recycling the high power machines. Especially due the short life span of these crypto mining rigs with an average of only 1.29 years of life span on these machines. Do keep in mind that these machines are powered on 24/7 for that average life span of 1.29 years. The bitcoin network grew from just 1 metric kiloton of mining devices in July 2014 to a peak of 39.75 metric kilotons in may 2021 (resources, conservation, and recycling, Xu, Ming). This amount represents roughly 2.9 million mining devices. Based on the economic lifetime of 1.29 years, the e-waste output is calculated to 30.7 metric kilotons annually per may 2021. It is important to keep in mind that these crypto mining rigs and graphics cards used to mine crypto currencies can only be used once to mine for the crypto currency. It cannot be used to mine the same crypto currency again. This results in the machine to be considered as an e-waste product.",
+            "p3" : "Over time, Crypto miners have turned to increasingly specialized hardware equipment with higher computing power. Whereas miners initially used central processing units (CPUs) to mine, they quickly realized that graphic processing units (GPUs) were better equipped for the task. In 2013, application-specific integrated circuits (ASICs) entered mining and replaced GPUs as the standard. ASICs are designed to perform a single repeated function. This makes them far more efficient at their specific task than the general purpose chips used in CPUs and GPUs. However, the fact that ASIC chips are single-purpose and not customizable prevents them from being repurposed for another task or even another type of cryptocurrency mining algorithm. In other words, they can’t be repurposed after becoming obsolete for their single purpose and as a result, they become e-waste at the end of their life.",
+
+            "href1" : "Bitcoin mining producing tonnes of waste - BBC News",
+            "href2" : "Cleaning Up Electronic Waste (E-Waste) | US EPA",
+            "href3" : "Bitcoin poses major electronic-waste problem (acs.org)",
+            "href4" : "Xu, M. (2020). Resources, conservation & recycling 2019 best paper awards. Resources, Conservation and Recycling, 158"
         }
+    },
+    "others":{
+        "video": "Video by Tom Fisk from Pexels"
     }
 }
