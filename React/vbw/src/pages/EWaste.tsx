@@ -46,16 +46,18 @@ export function EWaste(lang: Language){
                 </div>
             <div className="Main-text">
                     <RecycleGraph {...lang}> </RecycleGraph>
+                    
                     <div className="Ewaste-map-flex-container">
                         <div className="Ewaste-map-labels-container">
                             <div className="Ewaste-map-labels"><a className="Ewaste-blockRed">&#9607;</a>{lang.sections.e_waste.Legend1}</div>
                             <div className="Ewaste-map-labels"><a className="Ewaste-blockGreen">&#9607;</a> {lang.sections.e_waste.Legend2}</div>
                             <div className="Ewaste-map-labels"><a className="Ewaste-blockGreenYellow">&#9607;</a> {lang.sections.e_waste.Legend3}</div>
                         </div>
-                        <p className="recycle-map-description">
-                           {lang.sections.e_waste.MapDescription}
-                        </p>
                     </div>
+                    
+                    <p className="recycle-map-description">
+                        {lang.sections.e_waste.MapDescription}
+                    </p>
                     
                     <p className="">{lang.sections.e_waste.p1}
                     </p>

@@ -16,6 +16,7 @@ export function SiberianGlobalWarming(lang: Language): JSX.Element{
                 <div className="SiberianGlobalWarming-Description">
                     <h1>{lang.sections.carbon_emissions.SiberianGlobalWarming_h1}</h1>
                     <h2>{lang.sections.carbon_emissions.SiberianGlobalWarming_h2}</h2>
+                    <p>{lang.sections.carbon_emissions.SiberianGlobalWarming}</p>
                     <ul>
                         <li>
                             {lang.sections.carbon_emissions.SiberianGlobalWarming_li1}

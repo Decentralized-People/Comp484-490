@@ -14,8 +14,9 @@
 }
 
 .Ewaste-map-flex-container{
-    position: flex;
-    flex-direction: column;
+    position: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Ewaste-body-right{
@@ -26,12 +27,16 @@
     background-color: transparent;
 }
 
+
 .Ewaste-map-labels-container{
+    padding: 1rem;
+    width: 32rem;
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
+    align-content: space-between;
 }
 .Ewaste-blockRed{
     color: red
@@ -43,6 +48,18 @@
 
 .Ewaste-blockGreenYellow{
     color: greenyellow
+}
+
+.Ewaste-blockGreen:hover{
+    color: #98cb00
+}
+
+.Ewaste-blockRed:hover{
+    color: #98cb00
+}
+
+.Ewaste-blockGreenYellow:hover{
+    color: #98cb00
 }
 
 
