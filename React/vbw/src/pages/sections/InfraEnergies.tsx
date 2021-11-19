@@ -22,8 +22,8 @@ export function InfraEnergies(lang: Language): JSX.Element{
         
             <div className="InfraEnergies-FlexContainer">
                 <div className="InfraEnergies-Description">
-                <h2>{lang.sections.energy.InfraEnergies_h2}</h2>
-                <p>{lang.sections.energy.InfraEnergies_p}</p>
+                <h2>Internet Infrastructure Energy Consumption</h2>
+                <p>The minimal environmental impact that the internet could possibly have would be related to the minimum infrastructure required to preserve a single state of the internet. This static "snapshot" of the internet would be equivalent to pausing internet usage across the world without removing the structures that support it, for future use. Consider the following chart:</p>
                 </div>
             </div>
         </div>

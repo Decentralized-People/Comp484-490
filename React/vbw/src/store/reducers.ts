@@ -4,27 +4,27 @@ import { Language } from "./interfaces";
 import { Coin } from "./interfaces";
 
 import en_US from "../assets/lang/en_US.json";
-import ru_RU from "../assets/lang/ru_RU.json";
-import fi_FIN from "../assets/lang/fi_FIN.json";
-import de_DE from "../assets/lang/de_DE.json";
-import geo_GEO from "../assets/lang/geo_GEO.json";
-import fre_FRE from "../assets/lang/fre_FRE.json";
-import sp_SP from "../assets/lang/sp_SP.json";
+// import ru_RU from "../assets/lang/ru_RU.json";
+// import fi_FIN from "../assets/lang/fi_FIN.json";
+// import de_DE from "../assets/lang/de_DE.json";
+// import geo_GEO from "../assets/lang/geo_GEO.json";
+// import fre_FRE from "../assets/lang/fre_FRE.json";
+// import sp_SP from "../assets/lang/sp_SP.json";
 
 // eslint-disable-next-line
 const enUS = en_US;
-//eslint-disable-next-line
-const ruRU = ru_RU;
 // eslint-disable-next-line
-const fiFIN = fi_FIN;
-// eslint-disable-next-line
-const deDE = de_DE;
-// eslint-disable-next-line
-const geoGEO = geo_GEO;
-// eslint-disable-next-line
-const freFRE = fre_FRE;
-// eslint-disable-next-line
-const spSP = sp_SP;
+// const ruRU = ru_RU;
+// // eslint-disable-next-line
+// const fiFIN = fi_FIN;
+// // eslint-disable-next-line
+// const deDE = de_DE;
+// // eslint-disable-next-line
+// const geoGEO = geo_GEO;
+// // eslint-disable-next-line
+// const freFRE = fre_FRE;
+// // eslint-disable-next-line
+// const spSP = sp_SP;
 
 export interface ApplicatonState {
   settings_open: boolean;
