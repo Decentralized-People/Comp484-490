@@ -22,8 +22,6 @@ export function EnergyIntro(lang: Language): JSX.Element{
         
             <div className="EnergyIntro-FlexContainer">
                 <div className="EnergyIntro-Description">
-                <h1>Internet Energy Consumption</h1>
-                <h2>Comparing Minimal, Personal, and Societal Impacts</h2>
                 </div>
             </div>
         </div>
