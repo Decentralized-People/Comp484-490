@@ -7,26 +7,69 @@
         "e_waste" : "Déchets électroniques"  
     },
 
-    "side_bar" : {
-        "tab1" : "Étiquette 1",
-        "tab2" : "Étiquette 2",
-        "tab3" : "Étiquette 3"
-    },
-
     "settings" : {
         "title" : "Les paramètres",
-        "choose": "Choisissez votre langue"
+        "choose": "Choisissez votre langue",
+        "en": "Anglais",
+        "ru": "Russe",
+        "fi": "Finnois",
+        "de": "Allemand",
+        "es": "Espagnol",
+        "fr": "Français",
+        "ge": "Géorgien"
     },
 
     "sections" : {
         "energy": {
-            "title": "Bonjour le monde, je suis l'énergie"
+            "InfraEnergies_h2": "Internet Infrastructure Consommation d'énergie",
+            "InfraEnergies_p": "L'impact environnemental minimal qu'Internet pourrait éventuellement avoir serait lié à l'infrastructure minimale requise pour préserver un seul état d'Internet. Cet « instantané » statique d'Internet équivaudrait à suspendre l'utilisation d'Internet à travers le monde sans supprimer les structures qui le prennent en charge, pour une utilisation future. Il s'agit de la consommation d'énergie de base requise par Internet. Comme ces données sont difficiles à trouver, nous n'avons aucune estimation à la date de publication actuelle de la page Web.",
+            
+            "PersonalEnergies_h2": "Consommation d'énergie des Appareils Personnels",
+            "PersonalEnergies_pp": "L'infrastructure minimale requise par Internet contribue à elle seule à d'importantes émissions de carbone. L'ajout d'appareils personnels comme les smartphones ou les ordinateurs portables crée encore plus d'émissions en plus de cela. Chaque étape du cycle de vie d'un appareil personnel nécessite une consommation d'énergie, crée des déchets et émet des gaz à effet de serre. Nous n'avons à nouveau aucune donnée actuelle à la date de publication de cette page Web.",
+
+            "CryptoEnergies_h2" : "Crypto-monnaie et consommation d'énergie",
+            "CryptoEnergies_p" : "La crypto-monnaie existe comme alternative à la monnaie traditionnelle (également appelée monnaie fiduciaire) et se présente sous la forme de « pièces » numériques (ou de jetons, qui sont des dérivés de pièces). La première crypto-monnaie, Bitcoin, a été créée en 2009 dans le but de décentraliser l'argent, le libérant ainsi de la domination des banques et des gouvernements. Cela permet les transactions internationales et supprime les intermédiaires, ce qui rend le transfert moins cher et plus efficace. Cependant, sans la blockchain, la crypto-monnaie n'existe pas. La blockchain est une base de données publique mais immuable, également connue sous le nom de grand livre numérique. Les données sont réparties sur un essaim d'ordinateurs qui servent de vérificateurs des faits du grand livre. Cela permet à la blockchain d'être impartiale et digne de confiance, car elle est soutenue par le public plutôt que par un petit groupe. La crypto a une valeur légèrement différente de celle de l'argent traditionnel, car elle n'est soutenue par rien de physique. Sa valeur vient de son utilité, comme les transferts internationaux, le commerce, la liberté financière et le jalonnement (gagner des intérêts pour détenir des pièces). La crypto-monnaie a récemment gagné en popularité, peut-être pour une bonne raison. Cependant, cela ne signifie pas qu'il n'y a aucun coût. Suivant les méthodologies de Gallesdörfer et. le tout dans Consommation de Crypto-monnaies Au-delà du Bitcoin, nous pouvons montrer combien de ressources leur sont dédiées.",
+            "CryptoEnergies_p2" : "Les crypto-monnaies sont généralement décentralisées et reposent sur une validation commune des transactions. Les ordinateurs dédiés à la validation des transactions cryptographiques, appelés « mineurs », passent des heures à traiter ces transactions. À l'aide d'API qui suivent l'activité cryptographique mondiale, nous utilisons une statistique appelée « hashrate » pour suivre les calculs requis pour valider chaque transaction. Le hashrate fait référence au nombre de tentatives de validation d'une transaction, exprimé en unités de hachage par seconde. Selon l'algorithme que la pièce utilise pour la validation, nous pouvons appliquer une conversion des hashrates en « puissance nominale », une estimation approximative de la quantité d'énergie consommée par l'existence de la pièce. Ainsi, étant donné les 20 principales crypto-monnaies, nous pouvons montrer à quel point les crypto-monnaies pourraient nuire à l'environnement. Considérez les taux de hachage suivants pour les 20 meilleures pièces :",
+            
+            "EnergyConclusion_h2": "Pensées de Conclusion",
+            "EnergyConclusion_p": "En conclusion, les impacts personnels, sociétaux et existants d'Internet consomment une quantité importante d'énergie. Nous devons être conscients de ces impacts à l'avenir et trouver des solutions pour eux."
         },
         "carbon_emissions": {
-            "title": "Bonjour le monde, je suis les émissions de carbone"
+            "CarbonIntro_h1": "Traduire la Consommation d'énergie en Émissions de Carbone",
+            "CarbonIntro_p": "Une autre façon de visualiser ces données est du point de vue des émissions de carbone. Considérez les graphiques ci-dessous montrant les émissions mondiales de carbone provenant des combustibles fossiles.",
+
+            "CarbonMapTons" : "Émissions de carbone (tonnes)",
+            "CarbonMapYear" : "L'année",
+        
+            "SiberianGlobalWarming" : "Nous entendons que la température augmente chaque année et que l'océan devient plus acide. La plus grande contribution à ces causes est l'émission excessive de dioxyde de carbone que nous produisons. Cela amène donc les questions : pourquoi est-il important pour nous d'être conscients de notre empreinte carbone et le carbone lui-même est-il nocif ? Pour le décomposer en termes simples, le carbone est l'un des éléments les plus courants partout dans notre corps, dans l'air, etc. Les plantes utilisaient le dioxyde de carbone pour produire de l'oxygène dans le cadre du cycle qui soutient la vie sur terre. Mais ce que nous, les humains, faisons, c'est produire un excès de carbone dans l'atmosphère. Cela peut provoquer des changements climatiques extrêmes, par exemple en Sibérie. C'était la première fois en 150 ans d'histoire.",
+            "SiberianGlobalWarming_h1": "Le réchauffement climatique en Sibérie",
+            "SiberianGlobalWarming_h2" : "Le résultat des émissions de carbone ?",
+            "SiberianGlobalWarming_li1" : "La température monte plus de deux fois",
+            "SiberianGlobalWarming_li2" : "22 millions d'acres d'incendies de forêt (plus que la taille de la Grèce)",
+            "SiberianGlobalWarming_li3" : "Menace de virus anciens",
+
+            "CarbonConclusion_h1" : "Pensées de conclusion",
+            "CarbonConclusion_p" : "En conclusion, il est crucial pour nous d'être plus conscients de notre empreinte carbone. Il nous est difficile d'atteindre la neutralité carbone totale. L'un des meilleurs moyens de lutter contre les émissions est de compenser notre empreinte carbone. Cela signifie que nous devons trouver des moyens de réduire l'empreinte carbone que nous laissons individuellement. Il peut s'agir de petits changements tels que l'extinction des lumières lorsqu'elles ne sont pas utilisées. Acheter des articles d'occasion au lieu d'en acheter de nouveaux, en particulier de l'électronique. Achetez également dans des entreprises soucieuses de l'environnement et utilisant des ressources respectueuses de l'environnement."
+
+
         },
         "e_waste": {
-            "title": "Bonjour le monde, je suis le déchet électronique"
+            "Legend1" : "Pas de législation",
+            "Legend2" : "Frais de recyclage avancés",
+            "Legend3" : "Responsabilité du producteur",
+            "MapDescription" : "La carte ci-dessus montre quels États américains ont une législation active pour le recyclage des appareils électroniques. Les états qui sont soit de couleur verte, lorsque vous cliquez dessus, vous redirigent vers une page indiquant le nom et le type du programme de déchets électroniques, les interdictions de mise en décharge/articles jetables, le site Web du programme et un résumé du programme. Les états rouges, bien qu'ils soient cliquables, ne donnent aucune information supplémentaire puisqu'ils n'ont pas de programmes de recyclage.",            
+            
+            "p1" : "La pollution par les déchets électroniques est une question qui n'est pas discutée autant qu'elle le devrait. La plupart des consommateurs ne connaissent pas les bonnes façons de recycler leurs déchets électroniques. Surtout avec l'idée croissante de greenwash, cela n'aide pas les consommateurs à réellement comprendre les bonnes manières de gérer les déchets électroniques. La quantité de déchets électroniques que nous produisons en tant que consommateurs augmente d'année en année. Les grandes entreprises technologiques sont la plus grande influence dans l'augmentation de la consommation. Cela n'aide pas lorsque les entreprises technologiques proposent de nouvelles technologies chaque année, de nombreuses entreprises renforcent l'obsolescence de la technologie. C'est un cycle dont nous, les consommateurs, devons être plus conscients afin de ne pas avoir besoin d'un nouvel « Iphone » chaque année. Bon nombre de ces dispositifs peuvent entraîner une lixiviation chimique lorsqu'ils ne sont pas manipulés correctement. Ce qui entraîne la libération de toxines dangereuses dans notre environnement. Cela peut polluer notre système d'eau et le sol, le rendant plus acide et inconditionnel pour notre utilisation. À long terme, cela peut également entraîner de nouvelles maladies.",
+            "p2" : "L'extraction de crypto-monnaie produit de grandes quantités de déchets électroniques avec peu d'attention de la part des médias. Beaucoup de ces machines à haute capacité de calcul se retrouvent dans les déchets sans le processus approprié de recyclage des machines à haute puissance. Surtout en raison de la courte durée de vie de ces plates-formes de crypto-minage avec une durée de vie moyenne de seulement 1,29 an sur ces machines. Gardez à l'esprit que ces machines sont alimentées 24h/24 et 7j/7 pour cette durée de vie moyenne de 1,29 an. Le réseau bitcoin est passé de seulement 1 kilotonne d'appareils miniers en juillet 2014 à un pic de 39,75 kilotonnes en mai 2021 (ressources, conservation et recyclage, Xu, Ming). Ce montant représente environ 2,9 millions de dispositifs miniers. Sur la base d'une durée de vie économique de 1,29 an, la production de déchets électroniques est calculée à 30,7 kilotonnes par an en mai 2021. Il est important de garder à l'esprit que ces plates-formes de minage de crypto et cartes graphiques utilisées pour extraire des devises crypto ne peuvent être utilisées qu'une seule fois. à exploiter pour la crypto-monnaie. Il ne peut pas être utilisé pour extraire à nouveau la même crypto-monnaie. Il en résulte que la machine est considérée comme un déchet électronique.",
+            "p3" : "Au fil du temps, les mineurs de crypto se sont tournés vers des équipements matériels de plus en plus spécialisés avec une puissance de calcul plus élevée. Alors que les mineurs utilisaient initialement des unités centrales de traitement (CPU) pour miner, ils se sont rapidement rendu compte que les unités de traitement graphique (GPU) étaient mieux équipées pour cette tâche. En 2013, les circuits intégrés spécifiques aux applications (ASIC) sont entrés dans l'exploitation minière et ont remplacé les GPU en tant que norme. Les ASIC sont conçus pour exécuter une seule fonction répétée. Cela les rend beaucoup plus efficaces dans leur tâche spécifique que les puces à usage général utilisées dans les processeurs et les GPU. Cependant, le fait que les puces ASIC soient à usage unique et non personnalisables les empêche d'être réutilisées pour une autre tâche ou même un autre type d'algorithme d'extraction de crypto-monnaie. En d'autres termes, ils ne peuvent pas être réutilisés après être devenus obsolètes pour leur seul objectif et, par conséquent, ils deviennent des déchets électroniques à la fin de leur vie.",
+
+            "href1" : "L'exploitation minière de Bitcoin produit des tonnes de déchets - BBC News",
+            "href2" : "Nettoyage des déchets électroniques (E-déchets) | EPA des États-Unis",
+            "href3" : "Bitcoin pose un problème majeur de déchets électroniques (acs.org)",
+            "href4" : "Xu, M. (2020). Ressources, conservation et recyclage des prix du meilleur papier 2019. Ressources, conservation et recyclage, 158."
         }
+    },
+    "others":{
+        "video": "Vidéo de Tom Fisk de Pexels"
     }
 }
