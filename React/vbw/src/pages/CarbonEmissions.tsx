@@ -51,7 +51,6 @@ export function CarbonEmissions(lang: Language){
                     <div className="CarbonEmissions-body">
                         <CarbonIntro {...lang}></CarbonIntro>
                         <WorldCarbonEmissionsMap {...lang}></WorldCarbonEmissionsMap>
-                        <p>{lang.sections.carbon_emissions.SiberianGlobalWarming}</p>
                         <SiberianGlobalWarming {...lang}></SiberianGlobalWarming>
                         <CarbonConclusion {...lang}></CarbonConclusion>  
                     </div>

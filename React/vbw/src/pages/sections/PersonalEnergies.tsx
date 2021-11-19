@@ -22,7 +22,7 @@ export function PersonalEnergies(lang: Language): JSX.Element{
         
             <div className="PersonalEnergies-FlexContainer">
                 <div className="PersonalEnergies-Description">
-                <h2>{lang.sections.energy.InfraEnergies_h2}</h2>
+                <h2>{lang.sections.energy.PersonalEnergies_h2}</h2>
                 <p>{lang.sections.energy.PersonalEnergies_pp}</p>
                 </div>
             </div>
