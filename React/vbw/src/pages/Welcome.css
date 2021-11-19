@@ -1,0 +1,75 @@
+.Container-modal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Logo-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Logo-text-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Logo-welcome{
+    height: 10rem;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.Kzoo-welcome{
+    height: 4rem;
+    margin-top: 20px;
+    margin-bottom: auto;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.Description-welcome{
+    display: flex;
+    flex-direction: column;
+}
+.Descripntion-welcome-container-q{
+    margin-right: auto;
+}
+    .Description-welcome-q{
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 0;
+    }
+.Description-welcome-place{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.Description-welcome-text{
+    text-align: left;
+}
+.Developers-mentor-repository{
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .Logo-welcome{
+        height: 0rem;
+        visibility: hidden;
+    }
+    .Logo-text{
+        flex-direction: column;
+        
+    }
+    .Container-modal{
+        flex-direction: column;
+    }
+}
+

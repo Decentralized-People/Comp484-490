@@ -1,0 +1,75 @@
+{
+    "title": "ProyectoVBW",
+    "authors": "Gente Decentralizada",
+    "header": {
+        "energy": "Energía",
+        "carbon_emissions": "Emisiones de Carbono",
+        "e_waste" : "Residuos Electrónicos"  
+    },
+
+    "settings" : {
+        "title" : "Los Ajustes",
+        "choose": "Elige su Idioma",
+        "en": "Inglés",
+        "ru": "Ruso",
+        "fi":  "Finlandés",
+        "de": "Alemán",
+        "es": "Español",
+        "fr": "Francés",
+        "ge": "Georgiano"
+    },
+
+    "sections" : {
+        "energy": {
+            "InfraEnergies_h2": "Consumo de energía de la infraestructura de internet",
+            "InfraEnergies_p": "El impacto ambiental mínimo que posiblemente podría tener Internet estaría relacionado con la infraestructura mínima requerida para preservar un solo estado de Internet. Esta 'instantánea' estática de Internet equivaldría a pausar el uso de Internet en todo el mundo sin eliminar las estructuras que lo soportan, para uso futuro. Considere la siguiente tabla:",
+            
+            "PersonalEnergies_h2": "Consumo de energía del dispositivo personal",
+            "PersonalEnergies_pp": "La infraestructura mínima requerida por Internet por sí sola contribuye con importantes emisiones de carbono. Agregar dispositivos personales como teléfonos inteligentes o computadoras portátiles genera aún más emisiones además de eso. Cada paso en el ciclo de vida de un dispositivo personal requiere consumo de energía, genera desperdicio y emite gases de efecto invernadero.",
+
+            "CryptoEnergies_h2" : "Criptomoneda y consumo de energía",
+            "CryptoEnergies_p" : "La criptomoneda existe como una alternativa al dinero tradicional (también llamada moneda fiduciaria) y viene en forma de 'monedas' digitales (o tokens, que son derivados de monedas). La primera criptomoneda, Bitcoin, se creó en 2009 en un esfuerzo por descentralizar el dinero, liberándolo del dominio de los bancos y gobiernos. Esto permite transacciones internacionales y elimina a los intermediarios, haciendo que la transferencia sea más barata y eficiente. Sin embargo, sin la cadena de bloques, la criptomoneda no existe. una base de datos pública pero inmutable, también conocida como libro mayor digital. Los datos se distribuyen a través de un enjambre de computadoras que sirven como verificadores de datos del libro mayor. Esto permite que la cadena de bloques sea imparcial y confiable, ya que es respaldada por el público en lugar de que un grupo pequeño. Crypto tiene valor de una manera ligeramente diferente al dinero tradicional, ya que no está respaldado por nada físico. Su valor proviene de su utilidad, como transferencias internacionales, comercio, f libertad financiera y apuesta (ganar interés por tener monedas). La criptomoneda ha ganado mucha popularidad últimamente, posiblemente por una buena razón. Sin embargo, eso no significa que no haya ningún costo. Siguiendo las metodologías de Gallesdörfer et. todo en Consumo de criptomonedas más allá de Bitcoin, podemos mostrar cuántos recursos se dedican a ellas",
+            "CryptoEnergies_p2" : "Las criptomonedas suelen estar descentralizadas y dependen de la validación de transacciones comunales. Las computadoras que se dedican a validar transacciones criptográficas, llamadas 'mineros', pasan horas procesando estas transacciones. Utilizando API que rastrean la actividad criptográfica global, utilizamos una estadística llamada 'hashrate' para realizar un seguimiento de los cálculos necesarios para validar cada transacción. El hashrate se refiere al número de intentos de validar una transacción, expresado en unidades hash por segundo. Dependiendo del algoritmo que utilice la moneda para la validación, podemos aplicar una conversión de hashrates en 'potencia nominal', una estimación aproximada de cuánta energía consume la existencia de la moneda. Por lo tanto, dadas las veinte principales criptomonedas, podemos mostrar cuántas criptomonedas podrían dañar el medio ambiente. Considere las siguientes tasas de hash para las veinte monedas principales:",
+            
+            "EnergyConclusion_h2": "Pensamientos concluyentes",
+            "EnergyConclusion_p": "En conclusión, los impactos personales, sociales y existentes de Internet consumen una cantidad significativa de energía. Debemos ser conscientes de estos impactos en el futuro y encontrar soluciones para ellos"
+        },  
+        "carbon_emissions": {
+            "CarbonIntro_h1": "Traducir el consumo de energía en emisiones de carbono",
+            "CarbonIntro_p": "Otra forma en que podemos ver estos datos es con el punto de vista de las emisiones de carbono. Considere los siguientes gráficos que muestran las emisiones globales de carbono de los combustibles fósiles.",
+
+            "CarbonMapTons" : "Emisiones de carbono (toneladas)",
+            "CarbonMapYear" : "Año",
+        
+            "SiberianGlobalWarming" : "Escuchamos que la temperatura aumenta cada año y el océano se vuelve más ácido. La mayor contribución a estas causas es el exceso de emisión de dióxido de carbono que producimos. Entonces esto trae las preguntas: ¿por qué es importante para nosotros ser conscientes de nuestra huella de carbono y ¿es el carbono en sí mismo dañino? que sustenta la vida en la tierra. Pero lo que los seres humanos estamos haciendo es producir un exceso de carbono en la atmósfera. Esto puede provocar cambios climáticos extremos, por ejemplo en Siberia. Fue la primera vez en 150 años en la historia.",
+            "SiberianGlobalWarming_h1": "Calentamiento global en Siberia",
+            "SiberianGlobalWarming_h2" : "¿El resultado de las emisiones de carbono?",
+            "SiberianGlobalWarming_li1" : "La temperatura sube más del doble",
+            "SiberianGlobalWarming_li2" : "veintidos millones de acres de incendios forestales (más que el tamaño de Grecia)",
+            "SiberianGlobalWarming_li3" : "Amenaza de virus antiguos",
+
+            "CarbonConclusion_h1" : "Pensamientos concluyentes",
+            "CarbonConclusion_p" : "En conclusión, es crucial para nosotros ser más conscientes de nuestra huella de carbono. Es difícil para nosotros ser completamente neutrales en carbono. Una de las mejores formas de combatir las emisiones es compensar nuestra huella de carbono. Esto significa que tenemos que encontrar formas de anular la huella de carbono que dejamos individualmente. Estos podrían ser pequeños cambios, como apagar las luces cuando no se utilizan. Comprar artículos de segunda mano en lugar de comprar nuevos, especialmente electrónicos. También comprar en empresas que se preocupan sobre el medio ambiente y utilizar recursos respetuosos con el medio ambiente."
+
+
+        },
+        "e_waste": {
+            "Legend1" : "Sin legislación",
+            "Legend2" : "Tarifa de reciclaje avanzada",
+            "Legend3" : "Responsabilidad del productor",
+            "MapDescription" : "El mapa de arriba muestra qué estados de EE. UU. Tienen una legislación activa para el reciclaje de productos electrónicos. Los estados que son de color verde, cuando se hace clic en ellos, lo redireccionan a una página que muestra el nombre y el tipo del programa de desechos electrónicos, prohibiciones sobre el relleno sanitario / artículos desechables, el sitio web del programa y un resumen del programa. Los estados rojos, si bien se puede hacer clic en ellos, no brindan información adicional ya que no tienen programas de reciclaje.",            
+            
+            "p1" : "La contaminación por desechos electrónicos es un tema que no se discute tanto como se supone que debe ser. La mayoría de los consumidores no conocen las formas adecuadas de reciclar sus desechos electrónicos. Especialmente con la idea cada vez mayor del lavado verde, no está ayudando a los consumidores a comprender realmente las formas adecuadas de manejar los desechos electrónicos. La cantidad de desechos electrónicos que producimos como consumidores aumenta año tras año. Las grandes empresas tecnológicas son la mayor influencia en el aumento del consumo. No ayuda cuando las empresas tecnológicas salen con nuevas tecnologías todos los años, muchas empresas están impulsando la obsolescencia de la tecnología. Este es un ciclo del que los consumidores debemos ser más conscientes para no necesitar un nuevo “Iphone” cada año. Muchos de estos dispositivos pueden producir lixiviación química cuando no se manipulan correctamente. Lo que resulta en la liberación de toxinas peligrosas en nuestro medio ambiente. Esto puede contaminar nuestro sistema de agua y el suelo, haciéndolo más ácido e incondicional para que lo usemos. A la larga, esto también puede traer nuevas enfermedades.",
+            "p2" : "La minería de criptomonedas produce grandes cantidades de desechos electrónicos sin mucha atención por parte de los medios. Muchas de estas máquinas de alta computación terminan en la basura sin el proceso adecuado de reciclaje de las máquinas de alta potencia. Especialmente debido a la corta vida útil de estas plataformas de minería criptográfica con un promedio de solo 1.29 años de vida útil en estas máquinas. Tenga en cuenta que estas máquinas están encendidas las 24 horas del día, los 7 días de la semana, durante una vida media de 1,29 años. La red bitcoin creció de solo 1 kilotón métrico de dispositivos de minería en julio de 2014 a un pico de 39,75 kilotones métricos en mayo de 2021 (recursos, conservación y reciclaje, Xu, Ming). Esta cantidad representa aproximadamente 2,9 millones de dispositivos de minería. Sobre la base de la vida útil económica de 1,29 años, la producción de desechos electrónicos se calcula en 30,7 kilotones métricos anuales en mayo de 2021. Es importante tener en cuenta que estas plataformas de minería criptográfica y tarjetas gráficas que se utilizan para extraer monedas criptográficas solo se pueden utilizar una vez. para extraer la moneda criptográfica. No se puede usar para extraer la misma moneda criptográfica nuevamente. Esto da como resultado que la máquina se considere un producto de desecho electrónico.",
+            "p3" : "Con el tiempo, los mineros criptográficos han recurrido a equipos de hardware cada vez más especializados con mayor potencia informática. Mientras que los mineros inicialmente usaban unidades de procesamiento central (CPU) para minar, rápidamente se dieron cuenta de que las unidades de procesamiento gráfico (GPU) estaban mejor equipadas para la tarea. En 2013, los circuitos integrados específicos de la aplicación (ASIC) ingresaron a la minería y reemplazaron a las GPU como estándar. Los ASIC están diseñados para realizar una única función repetida. Esto los hace mucho más eficientes en su tarea específica que los chips de propósito general utilizados en CPU y GPU. Sin embargo, el hecho de que los chips ASIC sean de un solo propósito y no personalizables evita que se reutilicen para otra tarea o incluso para otro tipo de algoritmo de minería de criptomonedas. En otras palabras, no se pueden reutilizar después de volverse obsoletos para su único propósito y, como resultado, se convierten en desechos electrónicos al final de su vida útil",
+
+            "href1" : "Bitcoin mining producing tonnes of waste - BBC News",
+            "href2" : "Cleaning Up Electronic Waste (E-Waste) | US EPA",
+            "href3" : "Bitcoin poses major electronic-waste problem (acs.org)",
+            "href4" : "Xu, M. (2020). Resources, conservation & recycling 2019 best paper awards. Resources, Conservation and Recycling, 158"
+        }
+    },
+    "others":{
+        "video": "Video by Tom Fisk from Pexels"
+    }
+}

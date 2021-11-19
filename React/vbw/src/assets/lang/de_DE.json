@@ -1,0 +1,75 @@
+{
+    "title": "ProjectVBW",
+    "authors": "Dezentrale Menschen",
+    "header": {
+        "energy": "Energie",
+        "carbon_emissions": "Kohleemissionen",
+        "e_waste" : "E-waste"
+        },
+
+    "settings" : {
+        "title" : "Einstellung",
+        "choose": "Wählen Sie ihre Sprache",
+        "en": "Englisch",
+        "ru": "Russisch",
+        "fi": "Finnisch",
+        "de": "Deutsch",
+        "es": "Spanisch",
+        "fr": "Französisch",
+        "ge": "Georgisch"
+    },
+
+    "sections" : {
+        "energy": {
+            "InfraEnergies_h2": "Der Energiekonsum der Infrastruktur Internets",
+            "InfraEnergies_p": "Die ökologische Auswirkung am kleinsten des Internets kommt von der Infrastruktur, die einen momentaner Zustand des Internets erhalten könnte. Dieser statische Schnappschuss des Internets repräsentiert die Internetnutzung, weltweit zu halten, ohne die unterstützenden Strukturen für die zuküfntige Verwendung zu entfernen.",
+            
+            "PersonalEnergies_h2": "Der Energiekonsum des persönliches Geräts",
+            "PersonalEnergies_pp": "Die Infrastruktur am kleinsten, das Internet zu preservieren, benützt viel Energie. Wenn man ein persönlischer Gerät hat, macht man der Enerrgiekonsum größer.",
+
+            "CryptoEnergies_h2" : "Kryptowährung und Energiekonsum",
+            "CryptoEnergies_p" : "Kryptowährung exisiert als eine Alternative zur traditioneller Währung. Bitcoin war zuerst im Jahre 2009 gemacht, um Währung zu dezentralisieren. Bitcoin befreite Bürger von Staat, aber ohne der Blocklaschenkette existiert Bitcoin nicht. Die Blocklaschenkette ist öffentlich aber unveränderlich. Die Daten wird zu vielen Computers übertragt mit einen Fixpunkt im Universum. Alle die Computers überprüft dieser Fixpunkt, deswegen ist er vertrauenswürdig. Weil der Wert des Kryptos kommt nicht von materielle Dinge, es kommt von dem Interesse des Publikums. Jetzt ist Interesse stark und müssen wir über den ökologische Auswirkung sprechen. Mit der Methodologie des Gallesdörfer et. all in Consumption of Cryptocurrncies Beyond Bitcoin können wir an die Ressourcen des Kryptos konzentrieren.",
+            "CryptoEnergies_p2" :"Kryptowählung funkioniert an der Blocklaschenkette, die mit Computers überprüft sind. Eine Schätzung, wie viele Computers die Blocklaschenkette überprüfen habe, ist das Hashrate. Das Hashrate ist die Nummer den Computers, die die Blocklaschenkette überprüft, pro Sekunde. Abhänging von der Rechenregel, mit der die Computers die Blocklaschenkette überprüft, ist das Hashrate. Wir können das Rated Power (oder eine Schätzung von Energiekonsum) davon finden. Hier ist ein Diagram mit den zwangsigsten Kryptos, die am größten sind.",
+            
+            "EnergyConclusion_h2": "Schießlische Gedanken",
+            "EnergyConclusion_p": "Wir müssen auf ihre persönliche, sozialle Auswirkung konzentrieren, um die Welt zu schützen."
+        },
+        "carbon_emissions": {
+            "CarbonIntro_h1": "Energiekosum und Kohleemissionen",
+            "CarbonIntro_p": "Another way that we can view this data is with the viewpoint of carbon emissions. Schauen Sie dieser Diagramm von globalische Kohleemissionen von an.",
+
+            "CarbonMapTons" : "Kohleemission (metrische Tonne)",
+            "CarbonMapYear" : "Jahre",
+        
+            "SiberianGlobalWarming" : "Jedes Jahr hören wir, dass die Erwärmung der Erde stärker wird. Überschüssige Kohleemissionen haben hier die Schuld. Zum Beispiel in Sibirien gab es dieses Jahr extremes Wetter, die am schlimmsten vor hunderfünfzige Jahren sind.",
+            "SiberianGlobalWarming_h1": "Globale Erwärmung in Sibirien.",
+            "SiberianGlobalWarming_h2" : "Was ist das Ergebnis des Erwärmungs?",
+            "SiberianGlobalWarming_li1" : "Der dopplete Temperaturanstied",
+            "SiberianGlobalWarming_li2" : "Wahlbrände, die wie groß wie Griechenland sind",
+            "SiberianGlobalWarming_li3" : "Die Bedrohund den alten Viren",
+
+            "CarbonConclusion_h1" : "Schleißliche Gedanken",
+            "CarbonConclusion_p" : "Zum Ende müssen wir sich auf unsere Auswirkung gewärtig sein. Es ist schwer, CO2-netural zu werden, aber wir können als Personen, Firmen, und Gesellschaften besser werden."
+
+
+        },
+        "e_waste": {
+            "Legend1" : "Keine Gesetze",
+            "Legend2" : "Recyclen-Preis",
+            "Legend3" : "Die Schuld des Herstellers",
+            "MapDescription" : "Benüntzten die Legende, diese Diagramm zu verstehen. Sie können auf die Grüne klicken. Große Erklärung auf Englisch: The map above shows which U.S. states have active legislation for the recycling of electronics. States that are either color of green, when clicked on, redirect you to a page showing the name and type of the e-waste program, bans on landfill/disposable items, website of the program, and a summary of the program. Red states, while they can be clicked on, do not give any additional information since they do not have recycling programs.",
+            
+            "p1" : "E-Waste ist auf jedem Fall unbekannter in unseren ökologische Diskussionen. Die Verbraucherin weißt meistens nicht, wie sie ihre E-Waste recyceln könnte. Es gibt dafür Barriere, mit Greenwasching, komplizierte Regeln, und andere Probleme. Durch Tech-Firmen wie Apple gibt es mehr probleme wie Right To Fix. Alle die Probleme machen zusammen ein großer E-Waste Problem. Dieser Problem vergiftet uns, unsere Welt, unsere Tiere und alle.",
+            "p2" : "Kryptowährung macht E-Waste auch, und es gibt gar nichts dafür in die Nachrichten. Vielen den Computers sind ins Müll gegangen. Kryptocomputers sind im Durchschnitt für 1,29 Jahren nütllich. Das Bitcoin Netzwerk hat im Jahre 2021 39,75 metrische Kilotonnen von Computers, die geschaltet war (Resources, Conservation, and Recycling, Xu, Min). Das beduetet fast 2,9 millionen Computers. Ein Schätzung der E-Waste pro Jahre davon ist 30,7 metrische Kilotonnen pro Jahr, und heute haben wir keine Lösungen dafür.",
+            "p3" : "Kryptocomputers benützen spezifisch GPUs anstatt CPUs, weil sie schneller für Krytowährung sind. Im Jahre 2013 wird GPUs vom ASICs ersetzt. ASICs (auf Englisch, Application-Specific Integrated Circuits) kommt Einzweck in Betracht, also das beduedet, dass sie wichtig Müll am Ende ihre Lebenskreiz sind.",
+
+            "href1" : "Bitcoin mining producing tonnes of waste - BBC News",
+            "href2" : "Cleaning Up Electronic Waste (E-Waste) | US EPA",
+            "href3" : "Bitcoin poses major electronic-waste problem (acs.org)",
+            "href4" : "Xu, M. (2020). Resources, conservation & recycling 2019 best paper awards. Resources, Conservation and Recycling, 158"
+        }
+    },
+    "others":{
+        "video": "Video bei Tom Fisk von Pexels"
+    }
+}
