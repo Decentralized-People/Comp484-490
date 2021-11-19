@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.563b49f3.chunk.css",
-    "main.js": "/static/js/main.3ffe0c3c.chunk.js",
-    "main.js.map": "/static/js/main.3ffe0c3c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.108c8eb5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.108c8eb5.js.map",
-    "static/js/2.fef267af.chunk.js": "/static/js/2.fef267af.chunk.js",
-    "static/js/2.fef267af.chunk.js.map": "/static/js/2.fef267af.chunk.js.map",
-    "static/js/3.cf0f0626.chunk.js": "/static/js/3.cf0f0626.chunk.js",
-    "static/js/3.cf0f0626.chunk.js.map": "/static/js/3.cf0f0626.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.563b49f3.chunk.css.map": "/static/css/main.563b49f3.chunk.css.map",
-    "static/js/2.fef267af.chunk.js.LICENSE.txt": "/static/js/2.fef267af.chunk.js.LICENSE.txt",
-    "static/media/K2LineLeft 2CP.3a88c4e8.png": "/static/media/K2LineLeft 2CP.3a88c4e8.png",
-    "static/media/dp_logo_color.a63ddee7.svg": "/static/media/dp_logo_color.a63ddee7.svg",
-    "static/media/dp_logo_nocolor.6e9b3673.svg": "/static/media/dp_logo_nocolor.6e9b3673.svg"
+    "main.css": "/projectVBW/static/css/main.76e25cec.chunk.css",
+    "main.js": "/projectVBW/static/js/main.3ffe0c3c.chunk.js",
+    "main.js.map": "/projectVBW/static/js/main.3ffe0c3c.chunk.js.map",
+    "runtime-main.js": "/projectVBW/static/js/runtime-main.973d8409.js",
+    "runtime-main.js.map": "/projectVBW/static/js/runtime-main.973d8409.js.map",
+    "static/js/2.7bf40c39.chunk.js": "/projectVBW/static/js/2.7bf40c39.chunk.js",
+    "static/js/2.7bf40c39.chunk.js.map": "/projectVBW/static/js/2.7bf40c39.chunk.js.map",
+    "static/js/3.cf0f0626.chunk.js": "/projectVBW/static/js/3.cf0f0626.chunk.js",
+    "static/js/3.cf0f0626.chunk.js.map": "/projectVBW/static/js/3.cf0f0626.chunk.js.map",
+    "index.html": "/projectVBW/index.html",
+    "static/css/main.76e25cec.chunk.css.map": "/projectVBW/static/css/main.76e25cec.chunk.css.map",
+    "static/js/2.7bf40c39.chunk.js.LICENSE.txt": "/projectVBW/static/js/2.7bf40c39.chunk.js.LICENSE.txt",
+    "static/media/K2LineLeft 2CP.3a88c4e8.png": "/projectVBW/static/media/K2LineLeft 2CP.3a88c4e8.png",
+    "static/media/dp_logo_color.a63ddee7.svg": "/projectVBW/static/media/dp_logo_color.a63ddee7.svg",
+    "static/media/dp_logo_nocolor.6e9b3673.svg": "/projectVBW/static/media/dp_logo_nocolor.6e9b3673.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.108c8eb5.js",
-    "static/js/2.fef267af.chunk.js",
-    "static/css/main.563b49f3.chunk.css",
+    "static/js/runtime-main.973d8409.js",
+    "static/js/2.7bf40c39.chunk.js",
+    "static/css/main.76e25cec.chunk.css",
     "static/js/main.3ffe0c3c.chunk.js"
   ]
 }
