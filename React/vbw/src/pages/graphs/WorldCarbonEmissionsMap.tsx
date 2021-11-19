@@ -97,7 +97,7 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
                     data={toGraphData(CarbonEmissions, 2020)}
                     features={features}
                     margin={{ top: 0, right: 0, bottom: 0, left: 0 }}
-                    colors="spectral"
+                    colors="reds"
                     domain={[ 0, 750000000 ]}
                     unknownColor="#ffffff"
                     label="properties.name"
@@ -191,16 +191,16 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
                     axisBottom={{
                         tickSize: 5,
                         tickPadding: 5,
-                        tickRotation: 0,
+                        tickRotation: 90,
                         legend: 'Year',
                         legendPosition: 'middle',
-                        legendOffset: 32
+                        legendOffset: 42
                     }}
                     axisLeft={{
                         tickSize: 5,
                         tickPadding: 5,
                         tickRotation: 0,
-                        legend: 'Carbon Emissions',
+                        legend: 'Carbon Emissions (tonnes)',
                         legendPosition: 'middle',
                         legendOffset: -90
                     }}
