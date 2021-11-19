@@ -30,6 +30,9 @@ export function Settings(lang: Language): JSX.Element{
                         <Button onClick={() => changeLang("enUS") } block={true}> 🇺🇸 {lang.settings.en} </Button>
                     </div>
                     <div className="Language-button">
+                        <Button onClick={() => changeLang("spSP") } block={true} > 🇪🇸 {lang.settings.es}</Button>
+                    </div> 
+                    <div className="Language-button">
                         <Button onClick={() => changeLang("ruRU") } block={true}> 🇷🇺 {lang.settings.ru}</Button>
                     </div>
                     <div className="Language-button">
@@ -41,9 +44,6 @@ export function Settings(lang: Language): JSX.Element{
                     <div className="Language-button">
                         <Button onClick={() => changeLang("freFRE") } block={true}> 🇫🇷 {lang.settings.fr}</Button>
                     </div>
-                    <div className="Language-button">
-                        <Button onClick={() => changeLang("spSP") } block={true} > 🇪🇸 {lang.settings.es}</Button>
-                    </div> 
                     {/* moved to the bottom because one of us constantly move it to the top :/ */}
                     <div className="Language-button">
                         <Button onClick={() => changeLang("geoGEO") } block={true}> 🇬🇪 {lang.settings.ge}</Button>
@@ -60,6 +60,9 @@ export function Settings(lang: Language): JSX.Element{
                         <Button onClick={() => changeLang("enUS") } block={true}> 🇺🇸 {lang.settings.en} </Button>
                     </div>
                     <div className="Language-button">
+                        <Button onClick={() => changeLang("spSP") } block={true} > 🇪🇸 {lang.settings.es}</Button>
+                    </div> 
+                    <div className="Language-button">
                         <Button onClick={() => changeLang("ruRU") } block={true}> 🇷🇺 {lang.settings.ru}</Button>
                     </div>
                     <div className="Language-button">
@@ -71,9 +74,6 @@ export function Settings(lang: Language): JSX.Element{
                     <div className="Language-button">
                         <Button onClick={() => changeLang("freFRE") } block={true}> 🇫🇷 {lang.settings.fr}</Button>
                     </div>
-                    <div className="Language-button">
-                        <Button onClick={() => changeLang("spSP") } block={true} > 🇪🇸 {lang.settings.es}</Button>
-                    </div> 
                     {/* moved to the bottom because one of us constantly move it to the top :/ */}
                     <div className="Language-button">
                         <Button onClick={() => changeLang("geoGEO") } block={true}> 🇬🇪 {lang.settings.ge}</Button>
