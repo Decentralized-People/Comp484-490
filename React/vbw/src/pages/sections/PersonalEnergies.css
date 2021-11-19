@@ -1,9 +1,0 @@
-.PersonalEnergies-FlexContainer{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-.PersonalEnergies-Description{
-    width: 100%;
-    margin-left: 10rm;
-}
