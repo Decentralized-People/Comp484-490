@@ -9,6 +9,7 @@
     margin-right: auto;
     border-radius: 5px;
     transition: all 1s ease;
+    margin-bottom: 1rem;
 }
 
 .Ewaste-iframe-map:hover {

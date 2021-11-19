@@ -14,6 +14,11 @@
     overflow-y: scroll;
 }
 
+.CarbonEmissions-body{
+    position: flex;
+    flex-direction: row;
+}
+
 .CarbonEmissions-text{
     margin: 20px;
 }

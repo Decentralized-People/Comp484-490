@@ -8,15 +8,7 @@ import { useTypedSelector } from "../../store";
 import YouTube from 'react-youtube'
  
 
-export function SiberianGlobalWarming(lang: Language): JSX.Element{
-    
-    const dispatch = useDispatch();
-
-
-    useEffect(() => {
-    })    
-
- 
+export function SiberianGlobalWarming(lang: Language): JSX.Element{ 
 
     return(
         <div>

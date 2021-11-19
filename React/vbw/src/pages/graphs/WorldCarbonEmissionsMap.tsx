@@ -238,5 +238,4 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
             </div>
         </div>
     )
-       
 }
