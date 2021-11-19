@@ -26,6 +26,10 @@
     flex-direction: column;
 }
 
+.blockRed{
+    color: red
+}
+
 
 .Ewaste-text{
     margin: 20px;
