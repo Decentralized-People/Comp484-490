@@ -10,7 +10,7 @@ import { CarbonIntro } from "./sections/CarbonIntro";
 export function CarbonEmissions(lang: Language){
     return(
         <>
-            <div className="CarbonEmissions-body-left">
+            {/* <div className="CarbonEmissions-body-left">
                 <Tabs tabPosition="left" className="CarbonEmissions-tabs">
                     <Tabs.TabPane tab={lang.side_bar.tab1} key="1">
                     </Tabs.TabPane>
@@ -19,7 +19,7 @@ export function CarbonEmissions(lang: Language){
                     <Tabs.TabPane tab={lang.side_bar.tab3} key="3">
                     </Tabs.TabPane>
                 </Tabs>
-            </div>
+            </div> */}
             <div className="CarbonEmissions-body-right">
                 <div className="CarbonEmissions-body">
                     <CarbonIntro {...lang}></CarbonIntro>

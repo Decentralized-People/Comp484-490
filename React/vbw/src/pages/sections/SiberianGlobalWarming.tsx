@@ -10,13 +10,12 @@ import YouTube from 'react-youtube'
 
 export function SiberianGlobalWarming(lang: Language): JSX.Element{ 
 
-    return(
-        <div>
-        
+    return(        
+        <div className="SiberianGlobalWarming">
             <div className="SiberianGlobalWarming-FlexContainer">
                 <div className="SiberianGlobalWarming-Description">
-                <h1>Global warming in Siberia</h1>
-                <h2>The result of carbon emissions?</h2>
+                    <h1>Global warming in Siberia</h1>
+                    <h2>The result of carbon emissions?</h2>
                     <ul>
                         <li>
                             The temperature rising more than twice
@@ -35,5 +34,4 @@ export function SiberianGlobalWarming(lang: Language): JSX.Element{
             </div>
         </div>
     )
-       
 }

@@ -1,7 +1,9 @@
 @import '~antd/dist/antd.less';
 
 :root{
+    --left-width-mobile: 0rem;
     --header-height: 3rem;
+    --padding: 5%;
 }
 
 .videoTag{
@@ -77,21 +79,31 @@
 }
 
 @media screen and (max-width: 800px) {
+    .Header-dp-logo{
+        visibility: visible;
+    }
     .Header-dp-text{
         visibility: hidden;
         position: absolute;
+        width: 0;
     }
 
     #Header-menu-element-item1{
-        margin-right: auto;   
+        margin-left: 0;
+        margin-right: auto;
     }
 
     #Header-menu-element-item2{
-        margin-left: auto;   
+        margin-left: 0;   
+        content: "Carbon";
         margin-right: auto;   
+    }
+    #Header-menu-element-item1-text{
+        content: "Carbon";
+
     }
     
     #Header-menu-element-item3{
-        margin-left: auto;   
+        margin-left: 0; 
     }
 }
