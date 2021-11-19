@@ -1,6 +1,5 @@
 
 .Ewaste-iframe-map{
-    margin-top: 2rem;
     width: 80vw;
     height: 42vw;
     overflow-y: scroll;
@@ -9,7 +8,6 @@
     margin-right: auto;
     border-radius: 5px;
     transition: all 1s ease;
-    margin-bottom: 1rem;
 }
 
 .Ewaste-iframe-map:hover {

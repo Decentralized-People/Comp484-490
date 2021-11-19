@@ -14,17 +14,17 @@ export function SiberianGlobalWarming(lang: Language): JSX.Element{
         <div className="SiberianGlobalWarming">
             <div className="SiberianGlobalWarming-FlexContainer">
                 <div className="SiberianGlobalWarming-Description">
-                    <h1>Global warming in Siberia</h1>
-                    <h2>The result of carbon emissions?</h2>
+                    <h1>{lang.sections.carbon_emissions.SiberianGlobalWarming_h1}</h1>
+                    <h2>{lang.sections.carbon_emissions.SiberianGlobalWarming_h2}</h2>
                     <ul>
                         <li>
-                            The temperature rising more than twice
+                            {lang.sections.carbon_emissions.SiberianGlobalWarming_li1}
                         </li>
                         <li>
-                            22 million acres of wildfires (more than the size of Greece)
+                            {lang.sections.carbon_emissions.SiberianGlobalWarming_li2}
                         </li>
                         <li>
-                            Ancient viruses threat
+                            {lang.sections.carbon_emissions.SiberianGlobalWarming_li3}
                         </li>
                     </ul>
                 </div>

@@ -6,6 +6,8 @@ import { InfraEnergies } from "./sections/InfraEnergies";
 import { PersonalEnergies } from "./sections/PersonalEnergies";
 import { EnergyIntro } from "./sections/EnergyIntro";
 import { EnergyConclusion } from "./sections/EnergyConclusion";
+import ReactPlayer from 'react-player';
+
 export function Energy(lang: Language){
     return(
         <>
@@ -19,12 +21,41 @@ export function Energy(lang: Language){
                     </Tabs.TabPane>
                 </Tabs>
             </div> */}
+            
             <div className="Energy-body-right">
-                <EnergyIntro {...lang}> </EnergyIntro>
-                <InfraEnergies {...lang}> </InfraEnergies>
-                <PersonalEnergies {...lang}> </PersonalEnergies>
-                <CryptoEnergies {...lang}></CryptoEnergies>
-                <EnergyConclusion {...lang}></EnergyConclusion>
+                <div className="Video-container">
+                    <ReactPlayer
+                        className="videoTag-desktop"
+                        playing={true}
+                        loop={true}
+                        moot={true}
+                        height="100vh"
+                        width="100vw"
+                        config={{
+                        file: {
+                            attributes: {
+                            style: {
+                                zIndex: "100",
+                                objectFit: "cover",
+                            },
+                            },
+                        },
+                        }}
+                        url={'https://youtu.be/0D4a0avy0Ic'}
+                    />
+
+                    <div className="intro">
+                        <h1 className="intro-title">{lang.header.energy}</h1>
+                        <h6 className="intro-links">{lang.others.video}</h6>
+                    </div>
+                </div>
+                <div className="Main-text">
+                    <EnergyIntro {...lang}> </EnergyIntro>
+                    <InfraEnergies {...lang}> </InfraEnergies>
+                    <PersonalEnergies {...lang}> </PersonalEnergies>
+                    <CryptoEnergies {...lang}></CryptoEnergies>
+                    <EnergyConclusion {...lang}></EnergyConclusion>
+                </div>
             </div>
         </>
     )

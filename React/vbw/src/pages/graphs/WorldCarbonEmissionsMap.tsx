@@ -91,7 +91,6 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
 
     return(
         <div>
-            <h1>Choropleth</h1>
             <div className="WorldCarbonEmissionsMap-graph-container">
                 <ResponsiveChoropleth
                     data={toGraphData(CarbonEmissions, 2020)}
@@ -192,7 +191,7 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
                         tickSize: 5,
                         tickPadding: 5,
                         tickRotation: 90,
-                        legend: 'Year',
+                        legend: lang.sections.carbon_emissions.CarbonMapYear,
                         legendPosition: 'middle',
                         legendOffset: 42
                     }}
@@ -200,7 +199,7 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
                         tickSize: 5,
                         tickPadding: 5,
                         tickRotation: 0,
-                        legend: 'Carbon Emissions (tonnes)',
+                        legend: lang.sections.carbon_emissions.CarbonMapTons,
                         legendPosition: 'middle',
                         legendOffset: -90
                     }}

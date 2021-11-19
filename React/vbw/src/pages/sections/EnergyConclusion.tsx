@@ -22,8 +22,8 @@ export function EnergyConclusion(lang: Language): JSX.Element{
         
             <div className="EnergyConclusion-FlexContainer">
                 <div className="EnergyConclusion-Description">
-                <h2>Concluding Thoughts</h2>
-                <p>These are my concluding thoughts that I'll update</p>
+                <h2>{lang.sections.energy.EnergyConclusion_h2}</h2>
+                <p>{lang.sections.energy.EnergyConclusion_p}</p>
                 </div>
             </div>
         </div>

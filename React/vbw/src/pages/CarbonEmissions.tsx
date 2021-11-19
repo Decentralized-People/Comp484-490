@@ -6,6 +6,7 @@ import { WorldCarbonEmissionsMap } from "./graphs/WorldCarbonEmissionsMap";
 import { SiberianGlobalWarming } from "./sections/SiberianGlobalWarming";
 import { CarbonConclusion } from "./sections/CarbonConclusion";
 import { CarbonIntro } from "./sections/CarbonIntro";
+import ReactPlayer from "react-player";
 
 export function CarbonEmissions(lang: Language){
     return(
@@ -21,12 +22,39 @@ export function CarbonEmissions(lang: Language){
                 </Tabs>
             </div> */}
             <div className="CarbonEmissions-body-right">
-                <div className="CarbonEmissions-body">
-                    <CarbonIntro {...lang}></CarbonIntro>
-                    <WorldCarbonEmissionsMap {...lang}></WorldCarbonEmissionsMap>
-                    <p>We hear the temperature increases every year and the ocean becomes more acidic. The biggest contribution to these causes is the excess carbon dioxide emission that is produced by us. So this brings the questions: why is it important for us to be aware of our carbon footprint and is carbon itself harmful? To break it into simple terms carbon is one of the most common elements it is everywhere in our body, air, etc. Plants used carbon dioxide to produce oxygen as a part of the cycle that supports life on earth. But what we humans are doing is producing excess carbon into the atmosphere. This can cause extreme weather changes, for example Siberia. It was the first time in 150 years in history. </p>
-                    <SiberianGlobalWarming {...lang}></SiberianGlobalWarming>
-                    <CarbonConclusion {...lang}></CarbonConclusion>  
+                <div className="Video-container">
+                    <ReactPlayer
+                        className="videoTag-desktop"
+                        playing={true}
+                        loop={true}
+                        moot={true}
+                        height="100vh"
+                        width="100vw"
+                        config={{
+                        file: {
+                            attributes: {
+                            style: {
+                                zIndex: "100",
+                                objectFit: "cover",
+                            },
+                            },
+                        },
+                        }}
+                        url={'https://youtu.be/YRBDk8kFAw8'}
+                    />
+                    <div className="intro">
+                    <h1 className="intro-title">{lang.header.carbon_emissions}</h1>
+                        <h6 className="intro-links">{lang.others.video}</h6>
+                     </div>
+                </div>
+            <div className="Main-text">
+                    <div className="CarbonEmissions-body">
+                        <CarbonIntro {...lang}></CarbonIntro>
+                        <WorldCarbonEmissionsMap {...lang}></WorldCarbonEmissionsMap>
+                        <p>{lang.sections.carbon_emissions.SiberianGlobalWarming}</p>
+                        <SiberianGlobalWarming {...lang}></SiberianGlobalWarming>
+                        <CarbonConclusion {...lang}></CarbonConclusion>  
+                    </div>
                 </div>
             </div>
         </>

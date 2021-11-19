@@ -42,7 +42,7 @@ function App(): JSX.Element {
                   </div>
               </Menu.Item>
               <Menu.Item className = "Header-menu-element" id="Header-menu-element-item1" key="Energy">
-                  <Link id="Header-menu-element-item1-text" to="/energy">{lang.header.energy}</Link>
+                  <Link to="/energy">{lang.header.energy}</Link>
               </Menu.Item>
               <Menu.Item className = "Header-menu-element" id="Header-menu-element-item2" key="CarbonEmissions">
                   <Link to="/carbon-emissions">{lang.header.carbon_emissions}</Link>
