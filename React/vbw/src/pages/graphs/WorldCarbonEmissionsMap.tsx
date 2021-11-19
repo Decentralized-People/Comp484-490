@@ -97,7 +97,7 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
                     data={toGraphData(CarbonEmissions, 2020)}
                     features={features}
                     margin={{ top: 0, right: 0, bottom: 0, left: 0 }}
-                    colors="spectral"
+                    colors="reds"
                     domain={[ 0, 750000000 ]}
                     unknownColor="#ffffff"
                     label="properties.name"
