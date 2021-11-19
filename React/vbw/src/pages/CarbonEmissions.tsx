@@ -21,10 +21,12 @@ export function CarbonEmissions(lang: Language){
                 </Tabs>
             </div>
             <div className="CarbonEmissions-body-right">
-                <CarbonIntro {...lang}></CarbonIntro>
-                <WorldCarbonEmissionsMap {...lang}></WorldCarbonEmissionsMap>
-                <SiberianGlobalWarming {...lang}></SiberianGlobalWarming>
-                <CarbonConclusion {...lang}></CarbonConclusion>  
+                <div className="CarbonEmissions-body">
+                    <CarbonIntro {...lang}></CarbonIntro>
+                    <WorldCarbonEmissionsMap {...lang}></WorldCarbonEmissionsMap>
+                    <SiberianGlobalWarming {...lang}></SiberianGlobalWarming>
+                    <CarbonConclusion {...lang}></CarbonConclusion>  
+                </div>
             </div>
         </>
     )

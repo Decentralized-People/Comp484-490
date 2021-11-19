@@ -26,6 +26,25 @@
     flex-direction: column;
 }
 
+.Ewaste-map-labels-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.Ewaste-blockRed{
+    color: red
+}
+
+.Ewaste-blockGreen{
+    color: green
+}
+
+.Ewaste-blockGreenYellow{
+    color: greenyellow
+}
+
 
 .Ewaste-text{
     margin: 20px;

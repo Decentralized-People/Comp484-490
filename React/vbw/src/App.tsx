@@ -16,7 +16,6 @@ import { useDispatch } from "react-redux";
 import { toggleSettings } from './store/actions';
 import { useTypedSelector } from './store';
 import { Welcome } from './pages/Welcome';
-import ReactPlayer from "react-player";
 
 function App(): JSX.Element {
 
