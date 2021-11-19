@@ -4,13 +4,13 @@
     height: 100vh;
 }
 
-.CarbonEmissions-body-left{
+/* .CarbonEmissions-body-left{
     height: max-content;
-}
+} */
 
 .CarbonEmissions-body-right{
     height: calc(100vh - var(--header-height));
-    width: calc(100vw - var(--left-width));
+    width: calc(100vw);
     overflow-y: scroll;
 }
 
@@ -27,5 +27,11 @@
     .CarbonEmissions-tabs{
         visibility: hidden;
         position: absolute;
+    }
+
+    .CarbonEmissions-body-right{
+        height: calc(100vh - var(--header-height));
+        width: 100vw;
+        overflow-y: scroll;
     }
 }

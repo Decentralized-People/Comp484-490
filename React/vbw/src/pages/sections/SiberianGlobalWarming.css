@@ -1,12 +1,40 @@
+.SiberianGlobalWarming{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 .SiberianGlobalWarming-FlexContainer{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
 }
+
 .SiberianGlobalWarming-Description{
     width: 100%;
-    margin-left: 10rm;
 }
+
 .SiberianGlobalWarming-YouTube-container{
     width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .SiberianGlobalWarming-FlexContainer{
+        flex-direction: column;
+    }
+    
+    .SiberianGlobalWarming{
+        width: 100%;
+    }
+
+    .SiberianGlobalWarming-Description{
+        padding: 5%;
+    }
+    
+    .SiberianGlobalWarming-YouTube-container{
+        width: auto;
+        height: 100%;
+    }
 }

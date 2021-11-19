@@ -3,14 +3,15 @@
     height: 100vh;
 }
 
-.Energy-body-left{
-    height: max-content;
-}
-
 .Energy-body-right{
     height: calc(100vh - var(--header-height));
-    width: calc(100vw - var(--left-width));
+    width: calc(100vw);
     overflow-y: scroll;
+
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
 }
 
 .Energy-text{
