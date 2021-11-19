@@ -191,10 +191,10 @@ export function WorldCarbonEmissionsMap(lang: Language): JSX.Element{
                     axisBottom={{
                         tickSize: 5,
                         tickPadding: 5,
-                        tickRotation: 0,
+                        tickRotation: 90,
                         legend: 'Year',
                         legendPosition: 'middle',
-                        legendOffset: 32
+                        legendOffset: 42
                     }}
                     axisLeft={{
                         tickSize: 5,
