@@ -1,10 +1,10 @@
 {
     "title": "ProjectVBW",
-    "authors": "Decentralized People",
+    "authors": "Dezentrale Menschen",
     "header": {
-        "energy": "Energy",
-        "carbon_emissions": "Carbon Emissions",
-        "e_waste" : "E-waste"
+        "energy": "Energie",
+        "carbon_emissions": "Kohlenstoffemissionen",
+        "e_waste" : "Elektroschrott"
         },
 
     "settings" : {
@@ -28,7 +28,7 @@
             "PersonalEnergies_pp": "Die Infrastruktur am kleinsten, das Internet zu preservieren, benützt viel Energie. Wenn man ein persönlischer Gerät hat, macht man der Enerrgiekonsum größer.",
 
             "CryptoEnergies_h2" : "Kryptowährung und Energiekonsum",
-            "CryptoEnergies_p" : "Cryptocurrency exists as an alternative to traditional money (also called fiat currency), and comes in the form of digital 'coins' (or tokens, which are derivatives of coins). The first cryptocurrency, Bitcoin, was created in 2009 in an effort to decentralize money, thus freeing it from the rule of banks and governments. This enables international transactions and removes middle-men, making transfer cheaper and more efficient. However, without the blockchain, cryptocurrency does not exist. The blockchain is a public yet immutable database, also known as a digital ledger. The data is distributed over a swarm of computers that serve as fact-checkers of the ledger. This allows the blockchain to be unbiased and trustworthy, as it is upheld by the public rather than a small group. Crypto holds value in a slightly different way than traditional money, since it is not backed by anything physical. Its value comes from its utility, such as international transfers, trade, financial freedom, and staking (earning interest for holding coins). Cryptocurrency has gained a lot of popularity as of late, possibly for good reason. However, that does not mean there is no cost. Following the methodologies of [inset the name of the paper here], we can show how many resources are dedicated to them.""Kryptowährung exisiert als eine Alternative zur traditioneller Währung. Bitcoin war zuerst im Jahre 2009 gemacht, um Währung zu dezentralisieren. Bitcoin befreite Bürger von Staat, aber ohne der Blocklaschenkette existiert Bitcoin nicht. Die Blocklaschenkette ist öffentlich aber unveränderlich. Die Daten wird zu vielen Computers übertragt mit einen Fixpunkt im Universum. Alle die Computers überprüft dieser Fixpunkt, deswegen ist er vertrauenswürdig. Weil der Wert des Kryptos kommt nicht von materielle Dinge, es kommt von dem Interesse des Publikums. ",
+            "CryptoEnergies_p" : "Cryptocurrency exists as an alternative to traditional money (also called fiat currency), and comes in the form of digital 'coins' (or tokens, which are derivatives of coins). The first cryptocurrency, Bitcoin, was created in 2009 in an effort to decentralize money, thus freeing it from the rule of banks and governments. This enables international transactions and removes middle-men, making transfer cheaper and more efficient. However, without the blockchain, cryptocurrency does not exist. The blockchain is a public yet immutable database, also known as a digital ledger. The data is distributed over a swarm of computers that serve as fact-checkers of the ledger. This allows the blockchain to be unbiased and trustworthy, as it is upheld by the public rather than a small group. Crypto holds value in a slightly different way than traditional money, since it is not backed by anything physical. Its value comes from its utility, such as international transfers, trade, financial freedom, and staking (earning interest for holding coins). Cryptocurrency has gained a lot of popularity as of late, possibly for good reason. However, that does not mean there is no cost. Following the methodologies of [inset the name of the paper here], we can show how many resources are dedicated to them.'Kryptowährung exisiert als eine Alternative zur traditioneller Währung. Bitcoin war zuerst im Jahre 2009 gemacht, um Währung zu dezentralisieren. Bitcoin befreite Bürger von Staat, aber ohne der Blocklaschenkette existiert Bitcoin nicht. Die Blocklaschenkette ist öffentlich aber unveränderlich. Die Daten wird zu vielen Computers übertragt mit einen Fixpunkt im Universum. Alle die Computers überprüft dieser Fixpunkt, deswegen ist er vertrauenswürdig. Weil der Wert des Kryptos kommt nicht von materielle Dinge, es kommt von dem Interesse des Publikums. ",
             "CryptoEnergies_p2" : "Cryptocurrencies are typically decentralized and rely on communal transaction validation. Computers that are dedicated to validating crypto transactions, called 'miners', spend hours processing these transactions. Using APIs that track global crypto activity, we use a statistic called the 'hashrate' to track the computations required to validate each transaction. The hashrate refers to the number of attempts to validate a transaction, given in units hashes per second. Depending on the algorithm that the coin uses for validation, we can apply a conversion from hashrates into 'rated power', a rough estimate of how much energy is consumed by the existence of the coin. So, given the top 20 crypto currencies, we can show just how much cryptocurrencies could harm the enviornment. Consider the following hash rates for the top 20 coins:",
             
             "EnergyConclusion_h2": "Concluding Thoughts",
@@ -70,6 +70,6 @@
         }
     },
     "others":{
-        "video": "Video by Tom Fisk from Pexels"
+        "video": "Video von Tom Fisk von Pexels"
     }
 }
