@@ -28,5 +28,8 @@
         "e_waste": {
             "title": "Hola mundo, soy la residuo electrónico"
         }
+    },
+    "others":{
+        "video": "Video by Tom Fisk from Pexels"
     }
 }

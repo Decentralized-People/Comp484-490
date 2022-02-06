@@ -28,5 +28,8 @@
         "e_waste": {
             "title": "Moi maailma, olen elektroniikkajäte"
         }
+    },
+    "others":{
+        "video": "Video by Tom Fisk from Pexels"
     }
 }

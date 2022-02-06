@@ -28,5 +28,8 @@
         "e_waste": {
             "title": "Bonjour le monde, je suis le déchet électronique"
         }
+    },
+    "others":{
+        "video": "Video by Tom Fisk from Pexels"
     }
 }
